@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>US and Israel Air Quality</title>
+    <script src="http://www.amcharts.com/lib/3/ammap.js"></script>
+	<script src="http://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+	<script src="http://www.amcharts.com/lib/3/themes/light.js"></script>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<style>
+		#chartdiv {
+			width	: 100%;
+			height	: 500px;
+		}
+	</style>
+  </head>
+  <body>
+    <div id="chartdiv"></div>
+  </body>
+	<script type="text/javascript">
+		var cities = [
+			{ "city": "New York",
+			  location: { lat: 40.7740691, lon: -74.0675716},
+			},
+			{ city: "Los Angeles",
+			  location: { lat: 34.0204989, lon: -118.4117325 },
+			},
+			{ city: "Miami",
+			  location: { lat: 25.782324, lon: -80.2310801 },
+			},
+			{ city: "San Francisco",
+			  location: { lat: 37.7577, lon: -122.4376 },
+			},
+			{ city: "Chicago",
+			  location: { lat: 41.8337329, lon: -87.7321555 },
+			},
+			{ city: "Dallas",
+			  location: { lat: 32.8206645, lon: -96.7313396 },
+			},
+			{ city: "Washington DC",
+			  location: { lat: 38.8803757, lon: -77.1453725 },
+			},
+			{ city: "Boston",
+			  location: { lat: 42.3133735, lon: -71.0571571 },
+			},
+			{ city: "Las Vegas",
+			  location: { lat: 36.125, lon: -115.175 },
+			},
+			{ city: "Seattle",
+			  location: { lat: 47.614848, lon: -122.3359058 },
+			}/*,
+			//Israeli Cities
+			{ city: "Jerusalem",
+			  location: { lat: 31.7963186, lon: 35.175359 },
+			},
+			{ city: "Tel Aviv",
+			  location: { lat: 32.0878802, lon: 34.797246 },
+			},
+			{ city: "Haifa",
+			  location: { lat: 32.7996224, lon: 35.016776 },
+			},
+			{ city: "Rishon LeZion",
+			  location: { lat: 31.9751409, lon: 34.778404 },
+			},
+			{ city: "Petah Tikva",
+			  location: { lat: 32.09079, lon: 34.8871855 },
+			},
+			{ city: "Netanya",
+			  location: { lat: 32.3047284, lon: 34.860532 },
+			},
+			{ city: "Ashdod",
+			  location: { lat: 31.8082336, lon: 34.6581541 },
+			},
+			{ city: "Ashkelon",
+			  location: { lat: 31.6677251, lon: 34.5646541 },
+			},
+			{ city: "Beersheba",
+			  location: { lat: 31.2614413, lon: 34.790887 },
+			},
+			{ city: "Rehovot",
+			  location: { lat: 31.893397, lon: 34.806349 },
+			}*/
+		];
+	
+		var url = "http://api-beta.breezometer.com/baqi/?key=431d0045e4584ed0984f91bf75c266a1&location=";
+	
+		var ajaxCalls = [];
+		
+		cities.forEach(function(item) {
+			ajaxCalls.push($.ajax({
+			  dataType: "json",
+			  url: url+item.city.replace(/\ /g, '+')
+			}));
+			//alert(item.city + "\n" + item.location.lat);
+		});
+
+		$.when.apply($, ajaxCalls).done(function() {
+			// arguments here will be arrays for the ajax requests in
+			// ajaxCalls, where each array looks like [ data , statusText, jqXHR ]
+			var args = Array.prototype.slice.call(arguments, 0);
+			var imagesObj = [];
+			
+			for(var i = 0; i < args.length; i++){
+				var image = new Object();
+				var breezo = args[i][0];
+				image.latitude = cities[i].location.lat;
+				image.longitude = cities[i].location.lon;
+				
+				if (breezo.breezometer_aqi > 80) {
+					image.imageURL = "http://www.amcharts.com/images/weather/weather-clear.png";
+				} else if (breezo.breezometer_aqi > 60) {
+					image.imageURL = "http://www.amcharts.com/images/weather/weather-clouds.png";
+				} else if (breezo.breezometer_aqi > 40) {
+					image.imageURL = "http://www.amcharts.com/images/weather/weather-rain.png";
+				} else if (breezo.breezometer_aqi > 20) {
+					image.imageURL = "http://www.amcharts.com/images/weather/weather-showers.png";
+				} else {
+					image.imageURL = "http://www.amcharts.com/images/weather/weather-storm.png";
+				}
+				
+				image.width = 32;
+				image.height = 32;
+				image.label = cities[i].city + "\n(" + breezo.breezometer_description + ")";
+				imagesObj.push(image);
+			}
+			
+			var map = AmCharts.makeChart("chartdiv", {
+				type: "map",
+				"theme": "light",
+				"mouseWheelZoomEnabled": true,
+
+				dataProvider: {
+					map: "worldLow",
+					zoomLevel: 4,
+					zoomLatitude: 40,
+					zoomLongitude: -90,
+					/*zoomLatitude: 52,
+					zoomLongitude: 10,*/
+					areas: [
+					  {
+						id: "PT"
+					  },
+					  {
+						id: "US"
+					  },
+					  {
+						id: "IL"
+					  },
+					],
+					images: imagesObj
+				},
+
+				imagesSettings: {
+					labelRollOverColor: "#000",
+					labelPosition: "bottom"
+				},
+
+				areasSettings: {
+					rollOverOutlineColor: "#FFFFFF",
+					rollOverColor: "#CC0000",
+					alpha: 0.8
+				},
+
+				"export": {
+					"enabled": true
+				}
+			} );
+		});
+	</script>
+</html>
