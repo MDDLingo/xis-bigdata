@@ -42,7 +42,7 @@
 
 			// SERIAL CHART    
 			chart = new AmCharts.AmSerialChart();
-			chart.pathToImages = "http://www.amcharts.com/lib/images/";
+			chart.pathToImages = "http://www.amcharts.com/lib/3/images/";
 			chart.marginTop = 0;
 			chart.marginRight = 10;
 			chart.autoMarginOffset = 5;
@@ -89,13 +89,12 @@
 			chart.addChartCursor(chartCursor);
 
 			// SCROLLBAR
-			/*var chartScrollbar = new AmCharts.ChartScrollbar();
+			var chartScrollbar = new AmCharts.ChartScrollbar();
 			chartScrollbar.graph = graph;
-			chartScrollbar.dragIcon = "dragIcon";
 			chartScrollbar.scrollbarHeight = 40;
 			chartScrollbar.color = "#FFFFFF";
 			chartScrollbar.autoGridCount = true;
-			chart.addChartScrollbar(chartScrollbar);*/
+			chart.addChartScrollbar(chartScrollbar);
 
 			// WRITE
 			chart.write("chartdiv");
