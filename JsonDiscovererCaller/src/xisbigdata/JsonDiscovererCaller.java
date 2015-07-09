@@ -1,7 +1,10 @@
 package xisbigdata;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,8 +27,31 @@ public class JsonDiscovererCaller {
 	public static String JSON_TEST = " { \"codeLieu\":\"CRQU4\", \"libelle\":\"Place du Cirque\" }";
 	
 	public static void main(String[] args) {
+		URL url = JsonDiscovererCaller.class.getResource("JsonDiscovererCaller.class");
+		String jsonText = JSON_TEST;
+		
+		if (args.length == 1) {
+			
+			try {
+				BufferedReader br = new BufferedReader(new FileReader(args[0]));
+				StringBuilder sb = new StringBuilder();
+				String line = br.readLine();
+
+				while (line != null) {
+					sb.append(line);
+					sb.append(System.lineSeparator());
+					line = br.readLine();
+				}
+
+				jsonText = sb.toString();
+				br.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			} 
+		}
+		
 		JsonSource source = new JsonSource("Discovered");
-		source.addJsonDef(JSON_TEST);
+		source.addJsonDef(jsonText);
 		
 		JsonDiscoverer discoverer = new JsonDiscoverer();
 		EPackage discoveredModel = discoverer.discoverMetamodel(source);
@@ -43,11 +69,15 @@ public class JsonDiscovererCaller {
 			e.printStackTrace();
 		}
 		
-		ModelDrawer drawer = new ModelDrawer(
-			new File("../JsonDiscovererCaller/json/"), 
-			new File("../graphviz-2.38/bin/dot.exe"));
+		String graphvizPath = "../graphviz-2.38/bin/dot.exe";
+		
+		if (url.toString().contains("rsrc:")) {
+			graphvizPath = "graphviz-2.38/bin/dot.exe";
+		}
+		
+		ModelDrawer drawer = new ModelDrawer(new File("./"), new File(graphvizPath));
 		List<EObject> toDraw = new ArrayList<>();
 		toDraw.add(discoveredModel);
-		drawer.draw(toDraw, new File("./json/issue3.jpg"));
+		drawer.draw(toDraw, new File("./result.jpg"));
 	}
 }
