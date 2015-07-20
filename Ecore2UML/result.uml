@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_7jee0C7hEeWora-zifVSsA" name="Discovered">
+  <packagedElement xmi:type="uml:Class" xmi:id="_7jfF4C7hEeWora-zifVSsA" name="Discovered">
+    <ownedAttribute xmi:id="_7jfF4S7hEeWora-zifVSsA" name="codeLieu">
+      <type xmi:type="uml:PrimitiveType" href="UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7jfF4i7hEeWora-zifVSsA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7jfF4y7hEeWora-zifVSsA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7jfF5C7hEeWora-zifVSsA" name="libelle">
+      <type xmi:type="uml:PrimitiveType" href="UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7jfF5S7hEeWora-zifVSsA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7jfF5i7hEeWora-zifVSsA" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Package>
