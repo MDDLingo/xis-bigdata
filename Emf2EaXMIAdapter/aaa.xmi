@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmi:version="2.1">
+	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5"/>
+	<!-- Add UML Content here  -->
+	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<primitivetypes>
+			<packagedElement name="EA_PrimitiveTypes_Package" visibility="public" xmi:id="EAPrimitiveTypesPackage" xmi:type="uml:Package">
+				<packagedElement name="EA_Java_Types_Package" visibility="public" xmi:id="EAJavaTypesPackage" xmi:type="uml:Package">
+					<packagedElement name="String" visibility="public" xmi:id="EAJava_String" xmi:type="uml:PrimitiveType"/>
+					<packagedElement name="boolean" visibility="public" xmi:id="EAJava_boolean" xmi:type="uml:PrimitiveType">
+						<generalization xmi:id="EAJava_boolean_General" xmi:type="uml:Generalization">
+							<general href="http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean"/>
+						</generalization>
+					</packagedElement>
+					<packagedElement name="int" visibility="public" xmi:id="EAJava_int" xmi:type="uml:PrimitiveType">
+						<generalization xmi:id="EAJava_int_General" xmi:type="uml:Generalization">
+							<general href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+						</generalization>
+					</packagedElement>
+					<packagedElement name="double" visibility="public" xmi:id="EAJava_double" xmi:type="uml:PrimitiveType">
+						<generalization xmi:id="EAJava_double_General" xmi:type="uml:Generalization">
+							<general href="http://schema.omg.org/spec/UML/2.1/uml.xml#UnlimitedNatural"/>
+						</generalization>
+					</packagedElement>
+				</packagedElement>
+			</packagedElement>
+		</primitivetypes>
+	</xmi:Extension>
+<xmi:XMI xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmi:version="20131001">
+  <uml:Model name="Discovered" xmi:id="_AmZ8QC7ZEeWLSLcj81WdhA" xmi:type="uml:Model">
+    <packagedElement name="Discovered" xmi:id="_AmZ8QS7ZEeWLSLcj81WdhA" xmi:type="uml:Class">
+      <ownedAttribute name="name" xmi:id="_AmZ8Qi7ZEeWLSLcj81WdhA">
+        <type xmi:idref="EAJava_String"/>
+        <lowerValue value="1" xmi:id="_AmZ8Qy7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="_AmZ8RC7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+      <ownedAttribute name="latitude" xmi:id="_AmZ8RS7ZEeWLSLcj81WdhA">
+        <type xmi:idref="EAJava_String"/>
+        <lowerValue value="1" xmi:id="_AmZ8Ri7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="_AmZ8Ry7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+      <ownedAttribute name="longitude" xmi:id="_AmZ8SC7ZEeWLSLcj81WdhA">
+        <type xmi:idref="EAJava_String"/>
+        <lowerValue value="1" xmi:id="_AmZ8SS7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="_AmZ8Si7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+      <ownedAttribute name="country_code" xmi:id="_AmZ8Sy7ZEeWLSLcj81WdhA">
+        <type xmi:idref="EAJava_String"/>
+        <lowerValue value="1" xmi:id="_AmZ8TC7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="_AmZ8TS7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+      <ownedAttribute name="instance_id" xmi:id="_AmZ8Ti7ZEeWLSLcj81WdhA">
+        <type xmi:idref="EAJava_String"/>
+        <lowerValue value="1" xmi:id="_AmZ8Ty7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="_AmZ8UC7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+      <ownedAttribute association="_AmZ8aC7ZEeWLSLcj81WdhA" name="population" type="_AmZ8WC7ZEeWLSLcj81WdhA" xmi:id="_AmZ8US7ZEeWLSLcj81WdhA">
+        <lowerValue value="1" xmi:id="_AmZ8Ui7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="_AmZ8Uy7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement name="Module_name" xmi:id="_AmZ8VC7ZEeWLSLcj81WdhA" xmi:type="uml:Class">
+      <ownedAttribute name="EN" xmi:id="_AmZ8VS7ZEeWLSLcj81WdhA">
+        <type xmi:idref="EAJava_String"/>
+        <lowerValue value="1" xmi:id="_AmZ8Vi7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="_AmZ8Vy7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement name="Population" xmi:id="_AmZ8WC7ZEeWLSLcj81WdhA" xmi:type="uml:Class">
+      <ownedAttribute name="module_type" xmi:id="_AmZ8WS7ZEeWLSLcj81WdhA">
+        <type xmi:idref="EAJava_String"/>
+        <lowerValue value="1" xmi:id="_AmZ8Wi7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="_AmZ8Wy7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+      <ownedAttribute name="url" xmi:id="_AmZ8XC7ZEeWLSLcj81WdhA">
+        <type xmi:idref="EAJava_String"/>
+        <lowerValue value="1" xmi:id="_AmZ8XS7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="_AmZ8Xi7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+      <ownedAttribute name="value" xmi:id="_AmZ8Xy7ZEeWLSLcj81WdhA">
+        <type xmi:idref="EAJava_String"/>
+        <lowerValue value="1" xmi:id="_AmZ8YC7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="_AmZ8YS7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+      <ownedAttribute name="updated_at" xmi:id="_AmZ8Yi7ZEeWLSLcj81WdhA">
+        <type xmi:idref="EAJava_String"/>
+        <lowerValue value="1" xmi:id="_AmZ8Yy7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="1" xmi:id="_AmZ8ZC7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+      <ownedAttribute association="_AmZ8aS7ZEeWLSLcj81WdhA" name="module_name" type="_AmZ8VC7ZEeWLSLcj81WdhA" xmi:id="_AmZ8ZS7ZEeWLSLcj81WdhA">
+        <lowerValue value="1" xmi:id="_AmZ8Zi7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralInteger"/>
+        <upperValue value="*" xmi:id="_AmZ8Zy7ZEeWLSLcj81WdhA" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </ownedAttribute>
+    </packagedElement>
+  </uml:Model>
+  <uml:Association memberEnd="_AmZ8US7ZEeWLSLcj81WdhA" xmi:id="_AmZ8aC7ZEeWLSLcj81WdhA"/>
+  <uml:Association memberEnd="_AmZ8ZS7ZEeWLSLcj81WdhA" xmi:id="_AmZ8aS7ZEeWLSLcj81WdhA"/>
+</xmi:XMI>
+</xmi:XMI>
