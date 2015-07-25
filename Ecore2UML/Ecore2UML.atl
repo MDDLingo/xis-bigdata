@@ -67,13 +67,20 @@ rule EReferenceEOpposite2Property {
 			association <- thisModule.Association(e, e.eOpposite),
 			type <- e.eType
 		)
+	do {
+		if (e.containment and u.association.ownedEnd->size() > 0) {
+			u.association.ownedEnd.last().aggregation <- #composite;	
+		}
+	}
 }
 
 unique lazy rule Association {
 	from e1: Ecore!EReference, e2: Ecore!EReference
 	to
-		u: UML!Association (
-			memberEnd <- Sequence {e1, e2}
+		u: 	UML!Association (
+			name <- e1.name + '_' + e2.name,
+			memberEnd <- Sequence {e1, e2},
+			ownedEnd <- Sequence {e1, e2}
 		)
 }
 

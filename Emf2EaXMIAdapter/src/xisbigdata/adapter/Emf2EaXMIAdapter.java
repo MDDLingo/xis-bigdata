@@ -33,6 +33,58 @@ public class Emf2EaXMIAdapter {
 			if (model.getLength() == 1) {
 				Element xmi = (Element) model.item(0);
 				addUMLContent(builder, docEA, xmi);
+			
+				if (model.getLength() == 2) {
+					xmi = (Element) model.item(1);
+					NodeList childNodes = xmi.getChildNodes();
+					
+			        for (int i = 0; i < childNodes.getLength(); i++) {
+			            xmi.getParentNode().insertBefore(childNodes.item(i).cloneNode(true), null);
+			        }
+					xmi.getParentNode().removeChild(xmi);
+					
+					//Relocate Associations
+					Element umlPackage = (Element) docEA.getElementsByTagName("uml:Package").item(0);
+					NodeList associations = docEA.getElementsByTagName("uml:Association");
+					java.util.ArrayList<Element> assocs = new java.util.ArrayList<Element>();
+					
+					for (int i = 0; i < associations.getLength(); i++) {
+						Element assoc = (Element) associations.item(i);
+						assocs.add(assoc);
+					}
+					
+					for (Element ass : assocs) {
+						ass = (Element) docEA.renameNode(ass, "", "packagedElement");
+						//Add Missing Attributes
+						ass.setAttribute("xmi:type", "uml:Association");
+						ass.setAttribute("visibility", "public");
+						ass.removeAttribute("memberEnd");
+						umlPackage.insertBefore(ass, null);
+						
+						NodeList ownedEnds = ass.getElementsByTagName("ownedEnd");
+						//MemberEnd #1
+						Element memberEnd = docEA.createElement("memberEnd");
+						String value = ((Element)ownedEnds.item(0)).getAttribute("xmi:id"); 
+						memberEnd.setAttribute("xmi:idref", value);
+						ass.insertBefore(memberEnd, null);
+						
+						String type = ((Element)ownedEnds.item(0)).getAttribute("type");
+						Element typeTag = docEA.createElement("type");
+						typeTag.setAttribute("xmi:idref", type);
+						((Element)ownedEnds.item(0)).appendChild(typeTag);
+						
+						//MemberEnd #2
+						memberEnd = docEA.createElement("memberEnd");
+						value = ((Element)ownedEnds.item(1)).getAttribute("xmi:id"); 
+						memberEnd.setAttribute("xmi:idref", value);
+						ass.insertBefore(memberEnd, null);
+						
+						type = ((Element)ownedEnds.item(1)).getAttribute("type");
+						typeTag = docEA.createElement("type");
+						typeTag.setAttribute("xmi:idref", type);
+						((Element)ownedEnds.item(1)).appendChild(typeTag);
+					}
+				}
 			}
 			
 			NodeList xmiPackages = docEA.getElementsByTagName("uml:Package");
@@ -74,8 +126,8 @@ public class Emf2EaXMIAdapter {
 	private static void addUMLContent(DocumentBuilder builder,
 			Document document, Element element) throws SAXException,
 			IOException {
-//		InputStream f = Emf2EaXMIAdapter.class.getResourceAsStream("result.uml");
-		InputStream f = Emf2EaXMIAdapter.class.getResourceAsStream("refugees.uml");
+		InputStream f = Emf2EaXMIAdapter.class.getResourceAsStream("result.uml");
+//		InputStream f = Emf2EaXMIAdapter.class.getResourceAsStream("refugees.uml");
 		Document doc = builder.parse(f);
 		Element profile = doc.getDocumentElement();
 		profile.normalize();
