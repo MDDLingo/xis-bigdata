@@ -29,6 +29,8 @@ public class JsonDiscovererCaller {
 	public static void main(String[] args) {
 		URL url = JsonDiscovererCaller.class.getResource("JsonDiscovererCaller.class");
 		String jsonText = JSON_TEST;
+		String[] cenas = { "test.json" }; 
+		args = cenas;
 		
 		if (args.length == 1) {
 			

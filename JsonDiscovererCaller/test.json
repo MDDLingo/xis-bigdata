@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Central African Republic",
+        "population": [
+            {
+                "module_name": [
+                    {
+                        "EN": "Estimated number of Internally Displaced Persons in CAR"
+                    },
+                    {
+                        "FR": "Estimation du nombre des Personnes Déplacées en RCA"
+                    }
+                ],
+                "module_type": "Total Population & Demogrpahy",
+                "url": "http://data.unhcr.org/car/country.php?id=38",
+                "value": "399268",
+                "updated_at": "2015-05-31 16:51:32"
+            },
+            {
+                "module_name": [
+                    {
+                        "EN": "Estimated number of Internally Displaced Persons in Bangui"
+                    },
+                    {
+                        "FR": "Estimation du nombre des Personnes Déplacées à Bangui"
+                    }
+                ],
+                "module_type": "Total Population & Demogrpahy",
+                "url": "http://data.unhcr.org/car/country.php?id=38",
+                "value": "33067",
+                "updated_at": "2015-05-31 17:00:51"
+            }
+        ],
+        "latitude": "6.57046",
+        "longitude": "20.4862",
+        "country_code": "CAF",
+        "instance_id": "car"
+    }
+]
