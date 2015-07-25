@@ -67,6 +67,13 @@
   <styles xmi:type="notation:DiagramStyle" xmi:id="_1MUbkS75EeW3KJg6fBLyzA"/>
   <element xmi:type="uml:Model" href="model.uml#_1MTNcC75EeW3KJg6fBLyzA"/>
   <edges xmi:type="notation:Connector" xmi:id="_2_fpYC75EeW3KJg6fBLyzA" type="4001" source="_1zlP4C75EeW3KJg6fBLyzA" target="_2BWmIC75EeW3KJg6fBLyzA" lineColor="0">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_j315kDMLEeWn_bZsQlKV1g" source="Stereotype_Annotation">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j32goDMLEeWn_bZsQlKV1g" key="StereotypeWithQualifiedNameList" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j32goTMLEeWn_bZsQlKV1g" key="StereotypeList" value="XIS-Mobile::XisEntityAssociation"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j32gojMLEeWn_bZsQlKV1g" key="Stereotype_Presentation_Kind" value="HorizontalStereo"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j32gozMLEeWn_bZsQlKV1g" key="PropStereoDisplay" value=""/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j32gpDMLEeWn_bZsQlKV1g" key="StereotypePropertyLocation" value="Compartment"/>
+    </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_2_hekC75EeW3KJg6fBLyzA" type="6001">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_2_hekS75EeW3KJg6fBLyzA" y="-20"/>
     </children>

@@ -4,7 +4,9 @@
 -- @nsURI Library=http://www.eclipse.org/uml2/2.1.0/UML
 
 module Ecore2UML;
-create OUT: UML from IN: Ecore, IN_Library: Library;
+create OUT: UML from IN: Ecore, IN_Library: Library, IN_XISMobile: XIS;
+
+helper def : parentModel : UML!Model = OclUndefined;
 
 rule EPackage2Package {
 	from e: Ecore!EPackage
@@ -13,6 +15,22 @@ rule EPackage2Package {
 			name <- e.name,
 			packagedElement <- e.eClassifiers
 		)
+	do {
+		thisModule.Model(u);
+	}
+}
+
+unique lazy rule Model {
+	from e: UML!Package
+	to
+		u: 	UML!Model (
+			name <- e.name + 'Model',
+			packagedElement <- e
+		)
+	do {
+		u.applyProfile(XIS!Profile.allInstancesFrom('IN_XISMOBILE')->first());
+		thisModule.parentModel <- u;
+	}
 }
 
 rule EClass2Class {
@@ -25,6 +43,9 @@ rule EClass2Class {
 				e.eReferences->select(e | e.eOpposite.oclIsUndefined())
 			}
 		)
+	do {
+		u.applyStereotype(XIS!Stereotype.allInstancesFrom('IN_XISMOBILE')->select(s | s.name = 'XisEntity')->first());
+	}
 }
 
 helper def : getMappingType(input : Ecore!ETypedElement) : UML!Type =
@@ -44,6 +65,9 @@ rule EAttribute2Property {
 			upper <- e.upperBound,
 			lower <- e.lowerBound
 		)
+	do {
+		u.applyStereotype(XIS!Stereotype.allInstancesFrom('IN_XISMOBILE')->select(s | s.name = 'XisEntityAttribute')->first());
+	}
 }
 
 rule EReference2Property {
@@ -82,6 +106,10 @@ unique lazy rule Association {
 			memberEnd <- Sequence {e1, e2},
 			ownedEnd <- Sequence {e1, e2}
 		)
+	do {
+		thisModule.parentModel.packagedElement <- thisModule.parentModel.packagedElement.append(u);
+		u.applyStereotype(XIS!Stereotype.allInstancesFrom('IN_XISMOBILE')->select(s | s.name = 'XisEntityAssociation')->first());
+	}
 }
 
 rule EDataType2DataType {
