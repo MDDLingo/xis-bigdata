@@ -1,8 +1,66 @@
 <?xml version="1.0" encoding="windows-1252"?>
-<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:XIS-Mobile="http://www.sparxsystems.com/profiles/XIS-Mobile/1.0">
 	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5"/>
 	<!-- Add UML Content here  -->
 	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<elements>
+			<!-- <element xmi:idref="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4" xmi:type="uml:Class" name="Class2" scope="public">
+				<model package="EAPK_AAEC18C5_0B9F_46dd_92CC_CDD4E461A4DD" tpos="0" ea_localid="67" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="XisEntity" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="User" version="1.0" phase="1.0" created="2015-07-29 14:58:00" modified="2015-07-29 14:58:00" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<modelDocument/>
+				<tags>
+					<tag xmi:id="EAID_003DFCC1_03B3_2e03_9805_AABF3DF5FAB9" name="name" modelElement="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4"/>
+					<tag xmi:id="EAID_80C22EF1_2363_ac23_9E94_195FAA20F41D" name="persistent" value="true#NOTES#Values: true,false&#xA;Default: true&#xA;" modelElement="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={46A01F36-7114-40b5-BF04-E055D5C53540}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntity;FQName=XIS-Mobile::XisEntity;@ENDSTEREO;$DES;$CLT={DED4A646-C9B6-40eb-BC48-66A62D4322A4}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="XIS"/>
+				<links>
+					<Association xmi:id="EAID_DC897FCD_D991_41ff_822E_6FF843682246" start="EAID_FF398193_5F9A_40d7_92BF_A541869D559F" end="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4"/>
+				</links>
+			</element> -->
+		</elements>
+		<connectors>
+			<!-- <connector xmi:idref="EAID_DC897FCD_D991_41ff_822E_6FF843682246">
+				<source xmi:idref="EAID_FF398193_5F9A_40d7_92BF_A541869D559F">
+					<model ea_localid="66" type="Class" name="Class1"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4">
+					<model ea_localid="67" type="Class" name="Class2"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="29"/>
+				<properties ea_type="Association" stereotype="XisEntityAssociation" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels mb=" &#xA;«XisEntityAssociation»"/>
+				<extendedProperties conditional=" &#xA;«XisEntityAssociation»" virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={AB86C47B-F462-40e4-88B5-CF47CAD9A49E}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAssociation;FQName=XIS-Mobile::XisEntityAssociation;@ENDSTEREO;$DES;$CLT={DC897FCD-D991-41ff-822E-6FF843682246}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<tags>
+					<tag xmi:id="EAID_991FEF73_C402_0ec4_9AC8_C47E58FF4799" name="roleName"/>
+				</tags>
+			</connector> -->
+		</connectors>
 		<primitivetypes>
 			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public">
 				<packagedElement xmi:type="uml:Package" xmi:id="EAJavaTypesPackage" name="EA_Java_Types_Package" visibility="public">
@@ -25,5 +83,684 @@
 				</packagedElement>
 			</packagedElement>
 		</primitivetypes>
+		<profiles>
+			<uml:Profile xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1/" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:id="3213C2DC-E" nsPrefix="XIS-Mobile" name="XIS-Mobile" metamodelReference="mmref01">
+				<ownedComment xmi:type="uml:Comment" xmi:id="comment01" annotatedElement="3213C2DC-E">
+					<body>XIS-Mobile Version:1.0</body>
+				</ownedComment>
+				<packageImport xmi:id="mmref01">
+					<importedPackage href="http://schema.omg.org/spec/UML/2.1/"/>
+				</packageImport>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisClientMobileApp" name="XisClientMobileApp">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisClientMobileApp_XisProvider_generalization" general="XisProvider"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="InteractionSpace View" name="InteractionSpace View">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="InteractionSpace View-base_Package" name="base_Package" association="Package_InteractionSpace View">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_InteractionSpace View" name="A_Package_InteractionSpace View" memberEnd="extension_InteractionSpace View InteractionSpace View-base_Package">
+					<ownedEnd xmi:id="extension_InteractionSpace View" name="extension_InteractionSpace View" type="InteractionSpace View" isComposite="true" lower="0" upper="1" memberEnd="extension_InteractionSpace View InteractionSpace View-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisServer" name="XisServer">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisServer_XisProvider_generalization" general="XisProvider"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisServer-address" name="address">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisMenu" name="XisMenu">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisMenu_XisCompositeWidget_generalization" general="XisCompositeWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMenu-type" name="type">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisInteractionSpaceAssociation" name="XisInteractionSpaceAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisInteractionSpaceAssociation-base_Association" name="base_Association" association="Association_XisInteractionSpaceAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisInteractionSpaceAssociation-actionName" name="actionName">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisInteractionSpaceAssociation" name="A_Association_XisInteractionSpaceAssociation" memberEnd="extension_XisInteractionSpaceAssociation XisInteractionSpaceAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisInteractionSpaceAssociation" name="extension_XisInteractionSpaceAssociation" type="XisInteractionSpaceAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisInteractionSpaceAssociation XisInteractionSpaceAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisMobileApp" name="XisMobileApp">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMobileApp-base_Class" name="base_Class" association="Class_XisMobileApp">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMobileApp-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_XisMobileApp" name="A_Class_XisMobileApp" memberEnd="extension_XisMobileApp XisMobileApp-base_Class">
+					<ownedEnd xmi:id="extension_XisMobileApp" name="extension_XisMobileApp" type="XisMobileApp" isComposite="true" lower="0" upper="1" memberEnd="extension_XisMobileApp XisMobileApp-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisServiceMethod" name="XisServiceMethod">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisServiceMethod-base_Operation" name="base_Operation" association="Operation_XisServiceMethod">
+						<type href="http://schema.omg.org/spec/UML/2.1/Operation"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisServiceMethod-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Operation_XisServiceMethod" name="A_Operation_XisServiceMethod" memberEnd="extension_XisServiceMethod XisServiceMethod-base_Operation">
+					<ownedEnd xmi:id="extension_XisServiceMethod" name="extension_XisServiceMethod" type="XisServiceMethod" isComposite="true" lower="0" upper="1" memberEnd="extension_XisServiceMethod XisServiceMethod-base_Operation"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisLink" name="XisLink">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisLink_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisLink-onTap" name="onTap">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisLink-url" name="url">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisListItem" name="XisListItem">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisListItem_XisCompositeWidget_generalization" general="XisCompositeWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisListItem-onTap" name="onTap">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisListItem-onLongTap" name="onLongTap">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisArgument" name="XisArgument">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisArgument-base_Parameter" name="base_Parameter" association="Parameter_XisArgument">
+						<type href="http://schema.omg.org/spec/UML/2.1/Parameter"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisArgument-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisArgument-value" name="value">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisArgument-type" name="type">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Parameter_XisArgument" name="A_Parameter_XisArgument" memberEnd="extension_XisArgument XisArgument-base_Parameter">
+					<ownedEnd xmi:id="extension_XisArgument" name="extension_XisArgument" type="XisArgument" isComposite="true" lower="0" upper="1" memberEnd="extension_XisArgument XisArgument-base_Parameter"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisInternalProvider" name="XisInternalProvider">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisInternalProvider_XisProvider_generalization" general="XisProvider"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisInternalProvider-type" name="type">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisServiceUC-BEAssociation" name="XisServiceUC-BEAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisServiceUC-BEAssociation-base_Association" name="base_Association" association="Association_XisServiceUC-BEAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisServiceUC-BEAssociation" name="A_Association_XisServiceUC-BEAssociation" memberEnd="extension_XisServiceUC-BEAssociation XisServiceUC-BEAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisServiceUC-BEAssociation" name="extension_XisServiceUC-BEAssociation" type="XisServiceUC-BEAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisServiceUC-BEAssociation XisServiceUC-BEAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisDatePicker" name="XisDatePicker">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisDatePicker_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisActor" name="XisActor">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisActor-base_Actor" name="base_Actor" association="Actor_XisActor">
+						<type href="http://schema.omg.org/spec/UML/2.1/Actor"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisActor-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Actor_XisActor" name="A_Actor_XisActor" memberEnd="extension_XisActor XisActor-base_Actor">
+					<ownedEnd xmi:id="extension_XisActor" name="extension_XisActor" type="XisActor" isComposite="true" lower="0" upper="1" memberEnd="extension_XisActor XisActor-base_Actor"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisList" name="XisList">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisList_XisCompositeWidget_generalization" general="XisCompositeWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisList-orderBy" name="orderBy">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisList-searchBy" name="searchBy">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisProvider-ServiceRealization" name="XisProvider-ServiceRealization">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisProvider-ServiceRealization-base_Realization" name="base_Realization" association="Realization_XisProvider-ServiceRealization">
+						<type href="http://schema.omg.org/spec/UML/2.1/Realization"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Realization_XisProvider-ServiceRealization" name="A_Realization_XisProvider-ServiceRealization" memberEnd="extension_XisProvider-ServiceRealization XisProvider-ServiceRealization-base_Realization">
+					<ownedEnd xmi:id="extension_XisProvider-ServiceRealization" name="extension_XisProvider-ServiceRealization" type="XisProvider-ServiceRealization" isComposite="true" lower="0" upper="1" memberEnd="extension_XisProvider-ServiceRealization XisProvider-ServiceRealization-base_Realization"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisRemoteService" name="XisRemoteService">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisRemoteService_XisService_generalization" general="XisService"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisRemoteService-returnType" name="returnType">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisImage" name="XisImage">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisImage_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisImage-path" name="path">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisEntityUseCase" name="XisEntityUseCase">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisEntityUseCase_XisUseCase_generalization" general="XisUseCase"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-DeleteReference" name="DeleteReference">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-CreateMaster" name="CreateMaster">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-DeleteMaster" name="DeleteMaster">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-ReadMaster" name="ReadMaster">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-ReadReference" name="ReadReference">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-UpdateDetail" name="UpdateDetail">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-CreateReference" name="CreateReference">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-UpdateReference" name="UpdateReference">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-CreateDetail" name="CreateDetail">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-DeleteDetail" name="DeleteDetail">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-UpdateMaster" name="UpdateMaster">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-type" name="type">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUseCase-ReadDetail" name="ReadDetail">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisUseCase" name="XisUseCase" isAbstract="true">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisUseCase-base_UseCase" name="base_UseCase" association="UseCase_XisUseCase">
+						<type href="http://schema.omg.org/spec/UML/2.1/UseCase"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisUseCase-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisUseCase-isStartingUseCase" name="isStartingUseCase">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="UseCase_XisUseCase" name="A_UseCase_XisUseCase" memberEnd="extension_XisUseCase XisUseCase-base_UseCase">
+					<ownedEnd xmi:id="extension_XisUseCase" name="extension_XisUseCase" type="XisUseCase" isComposite="true" lower="0" upper="1" memberEnd="extension_XisUseCase XisUseCase-base_UseCase"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisInteractionSpace" name="XisInteractionSpace">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisInteractionSpace-base_Class" name="base_Class" association="Class_XisInteractionSpace">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisInteractionSpace-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisInteractionSpace-width" name="width">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisInteractionSpace-title" name="title">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisInteractionSpace-height" name="height">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisInteractionSpace-isMainScreen" name="isMainScreen">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisInteractionSpace-posX" name="posX">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisInteractionSpace-posY" name="posY">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_XisInteractionSpace" name="A_Class_XisInteractionSpace" memberEnd="extension_XisInteractionSpace XisInteractionSpace-base_Class">
+					<ownedEnd xmi:id="extension_XisInteractionSpace" name="extension_XisInteractionSpace" type="XisInteractionSpace" isComposite="true" lower="0" upper="1" memberEnd="extension_XisInteractionSpace XisInteractionSpace-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisGesture" name="XisGesture">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisGesture-base_Class" name="base_Class" association="Class_XisGesture">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisGesture-type" name="type">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_XisGesture" name="A_Class_XisGesture" memberEnd="extension_XisGesture XisGesture-base_Class">
+					<ownedEnd xmi:id="extension_XisGesture" name="extension_XisGesture" type="XisGesture" isComposite="true" lower="0" upper="1" memberEnd="extension_XisGesture XisGesture-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisServiceUseCase" name="XisServiceUseCase">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisServiceUseCase_XisUseCase_generalization" general="XisUseCase"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisEntityAttribute" name="XisEntityAttribute">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityAttribute-base_Attribute" name="base_Attribute" association="Attribute_XisEntityAttribute">
+						<type href="http://schema.omg.org/spec/UML/2.1/Attribute"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityAttribute-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityAttribute-isKey" name="isKey">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityAttribute-value" name="value">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityAttribute-nullable" name="nullable">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityAttribute-type" name="type">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Attribute_XisEntityAttribute" name="A_Attribute_XisEntityAttribute" memberEnd="extension_XisEntityAttribute XisEntityAttribute-base_Attribute">
+					<ownedEnd xmi:id="extension_XisEntityAttribute" name="extension_XisEntityAttribute" type="XisEntityAttribute" isComposite="true" lower="0" upper="1" memberEnd="extension_XisEntityAttribute XisEntityAttribute-base_Attribute"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisEntityAssociation" name="XisEntityAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityAssociation-base_Association" name="base_Association" association="Association_XisEntityAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityAssociation-roleName" name="roleName">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisEntityAssociation" name="A_Association_XisEntityAssociation" memberEnd="extension_XisEntityAssociation XisEntityAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisEntityAssociation" name="extension_XisEntityAssociation" type="XisEntityAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisEntityAssociation XisEntityAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisBE-EntityMasterAssociation" name="XisBE-EntityMasterAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisBE-EntityMasterAssociation-base_Association" name="base_Association" association="Association_XisBE-EntityMasterAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisBE-EntityMasterAssociation-filter" name="filter">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisBE-EntityMasterAssociation" name="A_Association_XisBE-EntityMasterAssociation" memberEnd="extension_XisBE-EntityMasterAssociation XisBE-EntityMasterAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisBE-EntityMasterAssociation" name="extension_XisBE-EntityMasterAssociation" type="XisBE-EntityMasterAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisBE-EntityMasterAssociation XisBE-EntityMasterAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisLabel" name="XisLabel">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisLabel_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisEntityUC-BEAssociation" name="XisEntityUC-BEAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityUC-BEAssociation-base_Association" name="base_Association" association="Association_XisEntityUC-BEAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisEntityUC-BEAssociation" name="A_Association_XisEntityUC-BEAssociation" memberEnd="extension_XisEntityUC-BEAssociation XisEntityUC-BEAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisEntityUC-BEAssociation" name="extension_XisEntityUC-BEAssociation" type="XisEntityUC-BEAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisEntityUC-BEAssociation XisEntityUC-BEAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisWebView" name="XisWebView">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisWebView_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisWebView-url" name="url">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Architectural View" name="Architectural View">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Architectural View-base_Package" name="base_Package" association="Package_Architectural View">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_Architectural View" name="A_Package_Architectural View" memberEnd="extension_Architectural View Architectural View-base_Package">
+					<ownedEnd xmi:id="extension_Architectural View" name="extension_Architectural View" type="Architectural View" isComposite="true" lower="0" upper="1" memberEnd="extension_Architectural View Architectural View-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisMenuItem" name="XisMenuItem">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisMenuItem_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMenuItem-onTap" name="onTap">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisIS-BEAssociation" name="XisIS-BEAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisIS-BEAssociation-base_Association" name="base_Association" association="Association_XisIS-BEAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisIS-BEAssociation" name="A_Association_XisIS-BEAssociation" memberEnd="extension_XisIS-BEAssociation XisIS-BEAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisIS-BEAssociation" name="extension_XisIS-BEAssociation" type="XisIS-BEAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisIS-BEAssociation XisIS-BEAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisMapMarker" name="XisMapMarker">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMapMarker-base_Class" name="base_Class" association="Class_XisMapMarker">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMapMarker-latitude" name="latitude">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMapMarker-onTap" name="onTap">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMapMarker-longitude" name="longitude">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMapMarker-title" name="title">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMapMarker-description" name="description">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_XisMapMarker" name="A_Class_XisMapMarker" memberEnd="extension_XisMapMarker XisMapMarker-base_Class">
+					<ownedEnd xmi:id="extension_XisMapMarker" name="extension_XisMapMarker" type="XisMapMarker" isComposite="true" lower="0" upper="1" memberEnd="extension_XisMapMarker XisMapMarker-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisInternalService" name="XisInternalService">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisInternalService_XisService_generalization" general="XisService"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="UseCases View" name="UseCases View">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="UseCases View-base_Package" name="base_Package" association="Package_UseCases View">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_UseCases View" name="A_Package_UseCases View" memberEnd="extension_UseCases View UseCases View-base_Package">
+					<ownedEnd xmi:id="extension_UseCases View" name="extension_UseCases View" type="UseCases View" isComposite="true" lower="0" upper="1" memberEnd="extension_UseCases View UseCases View-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisBE-EntityDetailAssociation" name="XisBE-EntityDetailAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisBE-EntityDetailAssociation-base_Association" name="base_Association" association="Association_XisBE-EntityDetailAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisBE-EntityDetailAssociation-filter" name="filter">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisBE-EntityDetailAssociation" name="A_Association_XisBE-EntityDetailAssociation" memberEnd="extension_XisBE-EntityDetailAssociation XisBE-EntityDetailAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisBE-EntityDetailAssociation" name="extension_XisBE-EntityDetailAssociation" type="XisBE-EntityDetailAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisBE-EntityDetailAssociation XisBE-EntityDetailAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisEntity" name="XisEntity">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntity-base_Class" name="base_Class" association="Class_XisEntity">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntity-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntity-persistent" name="persistent">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_XisEntity" name="A_Class_XisEntity" memberEnd="extension_XisEntity XisEntity-base_Class">
+					<ownedEnd xmi:id="extension_XisEntity" name="extension_XisEntity" type="XisEntity" isComposite="true" lower="0" upper="1" memberEnd="extension_XisEntity XisEntity-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisIS-DialogAssociation" name="XisIS-DialogAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisIS-DialogAssociation-base_Association" name="base_Association" association="Association_XisIS-DialogAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisIS-DialogAssociation" name="A_Association_XisIS-DialogAssociation" memberEnd="extension_XisIS-DialogAssociation XisIS-DialogAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisIS-DialogAssociation" name="extension_XisIS-DialogAssociation" type="XisIS-DialogAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisIS-DialogAssociation XisIS-DialogAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisMenuGroup" name="XisMenuGroup">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisMenuGroup_XisCompositeWidget_generalization" general="XisCompositeWidget"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisBusinessEntity" name="XisBusinessEntity">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisBusinessEntity-base_Class" name="base_Class" association="Class_XisBusinessEntity">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisBusinessEntity-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_XisBusinessEntity" name="A_Class_XisBusinessEntity" memberEnd="extension_XisBusinessEntity XisBusinessEntity-base_Class">
+					<ownedEnd xmi:id="extension_XisBusinessEntity" name="extension_XisBusinessEntity" type="XisBusinessEntity" isComposite="true" lower="0" upper="1" memberEnd="extension_XisBusinessEntity XisBusinessEntity-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisWidget" name="XisWidget" isAbstract="true">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisWidget-base_Class" name="base_Class" association="Class_XisWidget">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisWidget-valueFromExpression" name="valueFromExpression">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisWidget-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisWidget-width" name="width">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisWidget-value" name="value">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisWidget-height" name="height">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisWidget-posX" name="posX">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisWidget-posY" name="posY">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_XisWidget" name="A_Class_XisWidget" memberEnd="extension_XisWidget XisWidget-base_Class">
+					<ownedEnd xmi:id="extension_XisWidget" name="extension_XisWidget" type="XisWidget" isComposite="true" lower="0" upper="1" memberEnd="extension_XisWidget XisWidget-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisProvider" name="XisProvider" isAbstract="true">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisProvider-base_Class" name="base_Class" association="Class_XisProvider">
+						<type href="http://schema.omg.org/spec/UML/2.1/Class"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisProvider-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Class_XisProvider" name="A_Class_XisProvider" memberEnd="extension_XisProvider XisProvider-base_Class">
+					<ownedEnd xmi:id="extension_XisProvider" name="extension_XisProvider" type="XisProvider" isComposite="true" lower="0" upper="1" memberEnd="extension_XisProvider XisProvider-base_Class"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisCompositeWidget" name="XisCompositeWidget" isAbstract="true">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisCompositeWidget_XisWidget_generalization" general="XisWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisCompositeWidget-entityName" name="entityName">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisButton" name="XisButton">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisButton_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisButton-onTap" name="onTap">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisWidget-GestureAssociation" name="XisWidget-GestureAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisWidget-GestureAssociation-base_Association" name="base_Association" association="Association_XisWidget-GestureAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisWidget-GestureAssociation" name="A_Association_XisWidget-GestureAssociation" memberEnd="extension_XisWidget-GestureAssociation XisWidget-GestureAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisWidget-GestureAssociation" name="extension_XisWidget-GestureAssociation" type="XisWidget-GestureAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisWidget-GestureAssociation XisWidget-GestureAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisDropdown" name="XisDropdown">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisDropdown_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisDropdown-label" name="label">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisDialog" name="XisDialog">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisDialog_XisCompositeWidget_generalization" general="XisCompositeWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisDialog-title" name="title">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisDialog-description" name="description">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="BusinessEntities View" name="BusinessEntities View">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="BusinessEntities View-base_Package" name="base_Package" association="Package_BusinessEntities View">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_BusinessEntities View" name="A_Package_BusinessEntities View" memberEnd="extension_BusinessEntities View BusinessEntities View-base_Package">
+					<ownedEnd xmi:id="extension_BusinessEntities View" name="extension_BusinessEntities View" type="BusinessEntities View" isComposite="true" lower="0" upper="1" memberEnd="extension_BusinessEntities View BusinessEntities View-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisEntityInheritance" name="XisEntityInheritance">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEntityInheritance-base_Generalization" name="base_Generalization" association="Generalization_XisEntityInheritance">
+						<type href="http://schema.omg.org/spec/UML/2.1/Generalization"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Generalization_XisEntityInheritance" name="A_Generalization_XisEntityInheritance" memberEnd="extension_XisEntityInheritance XisEntityInheritance-base_Generalization">
+					<ownedEnd xmi:id="extension_XisEntityInheritance" name="extension_XisEntityInheritance" type="XisEntityInheritance" isComposite="true" lower="0" upper="1" memberEnd="extension_XisEntityInheritance XisEntityInheritance-base_Generalization"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisIS-MenuAssociation" name="XisIS-MenuAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisIS-MenuAssociation-base_Association" name="base_Association" association="Association_XisIS-MenuAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisIS-MenuAssociation" name="A_Association_XisIS-MenuAssociation" memberEnd="extension_XisIS-MenuAssociation XisIS-MenuAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisIS-MenuAssociation" name="extension_XisIS-MenuAssociation" type="XisIS-MenuAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisIS-MenuAssociation XisIS-MenuAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisAction" name="XisAction">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisAction-base_Operation" name="base_Operation" association="Operation_XisAction">
+						<type href="http://schema.omg.org/spec/UML/2.1/Operation"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisAction-navigation" name="navigation">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisAction-type" name="type">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Operation_XisAction" name="A_Operation_XisAction" memberEnd="extension_XisAction XisAction-base_Operation">
+					<ownedEnd xmi:id="extension_XisAction" name="extension_XisAction" type="XisAction" isComposite="true" lower="0" upper="1" memberEnd="extension_XisAction XisAction-base_Operation"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisEnumeration" name="XisEnumeration">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEnumeration-base_Enumeration" name="base_Enumeration" association="Enumeration_XisEnumeration">
+						<type href="http://schema.omg.org/spec/UML/2.1/Enumeration"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEnumeration-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Enumeration_XisEnumeration" name="A_Enumeration_XisEnumeration" memberEnd="extension_XisEnumeration XisEnumeration-base_Enumeration">
+					<ownedEnd xmi:id="extension_XisEnumeration" name="extension_XisEnumeration" type="XisEnumeration" isComposite="true" lower="0" upper="1" memberEnd="extension_XisEnumeration XisEnumeration-base_Enumeration"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisActor-UCAssociation" name="XisActor-UCAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisActor-UCAssociation-base_Association" name="base_Association" association="Association_XisActor-UCAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisActor-UCAssociation" name="A_Association_XisActor-UCAssociation" memberEnd="extension_XisActor-UCAssociation XisActor-UCAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisActor-UCAssociation" name="extension_XisActor-UCAssociation" type="XisActor-UCAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisActor-UCAssociation XisActor-UCAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisSimpleWidget" name="XisSimpleWidget" isAbstract="true">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisSimpleWidget_XisWidget_generalization" general="XisWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisSimpleWidget-entityAttributeName" name="entityAttributeName">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisMobileApp-ServiceAssociation" name="XisMobileApp-ServiceAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMobileApp-ServiceAssociation-base_Association" name="base_Association" association="Association_XisMobileApp-ServiceAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisMobileApp-ServiceAssociation" name="A_Association_XisMobileApp-ServiceAssociation" memberEnd="extension_XisMobileApp-ServiceAssociation XisMobileApp-ServiceAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisMobileApp-ServiceAssociation" name="extension_XisMobileApp-ServiceAssociation" type="XisMobileApp-ServiceAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisMobileApp-ServiceAssociation XisMobileApp-ServiceAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisVisibilityBoundary" name="XisVisibilityBoundary">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisVisibilityBoundary_XisCompositeWidget_generalization" general="XisCompositeWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisVisibilityBoundary-Edit" name="Edit">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisVisibilityBoundary-View" name="View">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisVisibilityBoundary-Create" name="Create">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisMapView" name="XisMapView">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisMapView_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMapView-latitude" name="latitude">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMapView-longitude" name="longitude">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisMapView-zoom" name="zoom">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisServiceUC-ProviderAssociation" name="XisServiceUC-ProviderAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisServiceUC-ProviderAssociation-base_Association" name="base_Association" association="Association_XisServiceUC-ProviderAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisServiceUC-ProviderAssociation" name="A_Association_XisServiceUC-ProviderAssociation" memberEnd="extension_XisServiceUC-ProviderAssociation XisServiceUC-ProviderAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisServiceUC-ProviderAssociation" name="extension_XisServiceUC-ProviderAssociation" type="XisServiceUC-ProviderAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisServiceUC-ProviderAssociation XisServiceUC-ProviderAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisRadioButton" name="XisRadioButton">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisRadioButton_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisTextBox" name="XisTextBox">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisTextBox_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisTextBox-label" name="label">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisTextBox-hint" name="hint">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisTextBox-lines" name="lines">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisListGroup" name="XisListGroup">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisListGroup_XisCompositeWidget_generalization" general="XisCompositeWidget"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisCheckBox" name="XisCheckBox">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisCheckBox_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisCheckBox-label" name="label">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisBE-EntityReferenceAssociation" name="XisBE-EntityReferenceAssociation">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisBE-EntityReferenceAssociation-base_Association" name="base_Association" association="Association_XisBE-EntityReferenceAssociation">
+						<type href="http://schema.omg.org/spec/UML/2.1/Association"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisBE-EntityReferenceAssociation-filter" name="filter">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Association_XisBE-EntityReferenceAssociation" name="A_Association_XisBE-EntityReferenceAssociation" memberEnd="extension_XisBE-EntityReferenceAssociation XisBE-EntityReferenceAssociation-base_Association">
+					<ownedEnd xmi:id="extension_XisBE-EntityReferenceAssociation" name="extension_XisBE-EntityReferenceAssociation" type="XisBE-EntityReferenceAssociation" isComposite="true" lower="0" upper="1" memberEnd="extension_XisBE-EntityReferenceAssociation XisBE-EntityReferenceAssociation-base_Association"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Domain View" name="Domain View">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Domain View-base_Package" name="base_Package" association="Package_Domain View">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_Domain View" name="A_Package_Domain View" memberEnd="extension_Domain View Domain View-base_Package">
+					<ownedEnd xmi:id="extension_Domain View" name="extension_Domain View" type="Domain View" isComposite="true" lower="0" upper="1" memberEnd="extension_Domain View Domain View-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="NavigationSpace View" name="NavigationSpace View">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="NavigationSpace View-base_Package" name="base_Package" association="Package_NavigationSpace View">
+						<type href="http://schema.omg.org/spec/UML/2.1/Package"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Package_NavigationSpace View" name="A_Package_NavigationSpace View" memberEnd="extension_NavigationSpace View NavigationSpace View-base_Package">
+					<ownedEnd xmi:id="extension_NavigationSpace View" name="extension_NavigationSpace View" type="NavigationSpace View" isComposite="true" lower="0" upper="1" memberEnd="extension_NavigationSpace View NavigationSpace View-base_Package"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisTimePicker" name="XisTimePicker">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisTimePicker_XisSimpleWidget_generalization" general="XisSimpleWidget"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisForm" name="XisForm">
+					<generalization xmi:type="uml:Generalization" xmi:id="XisForm_XisCompositeWidget_generalization" general="XisCompositeWidget"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisService" name="XisService" isAbstract="true">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisService-base_Interface" name="base_Interface" association="Interface_XisService">
+						<type href="http://schema.omg.org/spec/UML/2.1/Interface"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisService-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Interface_XisService" name="A_Interface_XisService" memberEnd="extension_XisService XisService-base_Interface">
+					<ownedEnd xmi:id="extension_XisService" name="extension_XisService" type="XisService" isComposite="true" lower="0" upper="1" memberEnd="extension_XisService XisService-base_Interface"/>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="XisEnumerationValue" name="XisEnumerationValue">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEnumerationValue-base_Attribute" name="base_Attribute" association="Attribute_XisEnumerationValue">
+						<type href="http://schema.omg.org/spec/UML/2.1/Attribute"/>
+					</ownedAttribute>
+					<ownedAttribute xmi:type="uml:Property" xmi:id="XisEnumerationValue-name" name="name">
+						<type href="http://schema.omg.org/spec/UML/2.1/String"/>
+					</ownedAttribute>
+				</packagedElement>
+				<packagedElement xmi:type="uml:Extension" xmi:id="Attribute_XisEnumerationValue" name="A_Attribute_XisEnumerationValue" memberEnd="extension_XisEnumerationValue XisEnumerationValue-base_Attribute">
+					<ownedEnd xmi:id="extension_XisEnumerationValue" name="extension_XisEnumerationValue" type="XisEnumerationValue" isComposite="true" lower="0" upper="1" memberEnd="extension_XisEnumerationValue XisEnumerationValue-base_Attribute"/>
+				</packagedElement>
+			</uml:Profile>
+		</profiles>
 	</xmi:Extension>
 </xmi:XMI>

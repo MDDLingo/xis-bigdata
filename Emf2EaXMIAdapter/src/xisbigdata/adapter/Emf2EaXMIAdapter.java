@@ -11,6 +11,10 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -44,8 +48,11 @@ public class Emf2EaXMIAdapter {
 					xmi.getParentNode().removeChild(xmi);
 					
 					//Relocate Associations
-					Element umlPackage = (Element) docEA.getElementsByTagName("uml:Package").item(0);
-					NodeList associations = docEA.getElementsByTagName("uml:Association");
+					XPath path = XPathFactory.newInstance().newXPath();
+					XPathExpression expr = path.compile("/*/*/packagedElement[@*[name()='xmi:type']='uml:Package']");
+					Element umlPackage = (Element)((NodeList) expr.evaluate(docEA, XPathConstants.NODESET)).item(0);
+					expr = path.compile("/*/*/packagedElement[@*[name()='xmi:type']='uml:Association']");
+					NodeList associations = (NodeList) expr.evaluate(docEA, XPathConstants.NODESET);
 					java.util.ArrayList<Element> assocs = new java.util.ArrayList<Element>();
 					
 					for (int i = 0; i < associations.getLength(); i++) {
@@ -54,9 +61,7 @@ public class Emf2EaXMIAdapter {
 					}
 					
 					for (Element ass : assocs) {
-						ass = (Element) docEA.renameNode(ass, "", "packagedElement");
 						//Add Missing Attributes
-						ass.setAttribute("xmi:type", "uml:Association");
 						ass.setAttribute("visibility", "public");
 						ass.removeAttribute("memberEnd");
 						umlPackage.insertBefore(ass, null);
@@ -84,18 +89,21 @@ public class Emf2EaXMIAdapter {
 						typeTag.setAttribute("xmi:idref", type);
 						((Element)ownedEnds.item(1)).appendChild(typeTag);
 					}
+					
+					//Relocate XIS-Mobile Stereotypes
+					Element umlModel = (Element) docEA.getElementsByTagName("uml:Model").item(0);
+					expr = path.compile("/*/*[starts-with(name(), 'XIS')]");
+					NodeList stereotypes = (NodeList) expr.evaluate(docEA, XPathConstants.NODESET);
+					
+					for (int i = 0; i < stereotypes.getLength(); i++) {
+						Element s = (Element) stereotypes.item(i);
+						s = (Element) docEA.renameNode(s, "", s.getTagName().replace("XIS", "XIS-"));
+						umlModel.insertBefore(s, null);
+					}
+					
+					Element profileApplication = (Element) docEA.getElementsByTagName("profileApplication").item(0);
+					profileApplication.getParentNode().removeChild(profileApplication);
 				}
-			}
-			
-			NodeList xmiPackages = docEA.getElementsByTagName("uml:Package");
-			
-			if (xmiPackages != null) {
-				Element p = (Element) xmiPackages.item(0);
-				p.removeAttribute("xmi:version");
-				p.removeAttribute("xmlns:xmi");
-				p.removeAttribute("xmlns:uml");
-				p.setAttribute("xmi:type", "uml:Model");
-				docEA.renameNode(p, "", "uml:Model");
 			}
 
 			NodeList typesNodes = docEA.getElementsByTagName("type");
