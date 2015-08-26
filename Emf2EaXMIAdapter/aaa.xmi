@@ -4,63 +4,393 @@
 	<!-- Add UML Content here  -->
 	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
 		<elements>
-			<!-- <element xmi:idref="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4" xmi:type="uml:Class" name="Class2" scope="public">
-				<model package="EAPK_AAEC18C5_0B9F_46dd_92CC_CDD4E461A4DD" tpos="0" ea_localid="67" ea_eleType="element"/>
-				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="XisEntity" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="User" version="1.0" phase="1.0" created="2015-07-29 14:58:00" modified="2015-07-29 14:58:00" complexity="1" status="Proposed"/>
+			
+		<element name="Discovered" scope="public" xmi:idref="_8JCvcTMSEeWtvZiUVf6gOQ" xmi:type="uml:Package">
+				<model ea_eleType="package" ea_localid="91" package="6da8abb2_3d60_4272_90f3_2a2c4ffb66a3" package2="70400634_efc9_4b38_80dc_b612ebcbed60" tpos="0"/>
+				<properties isSpecification="false" nType="0" sType="Package" scope="public" stereotype="Domain View"/>
+				<project author="User" complexity="1" created="2015-08-26 15:24:13" modified="2015-08-26 15:24:13" phase="1.0" status="Proposed" version="1.0"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<modelDocument/>
+				<tags/>
+				<xrefs value="$XREFPROP=$XID={90a18d2a-bbdf-4a88-bafa-a01db5acffd8}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=XIS-Mobile_Diagrams::DomainViewModel@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=true@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={85b112de-e879-4cec-bc8a-7b1e7260e25f}$CLT;$ENDXREF;$XREFPROP=$XID={798bfdd0-4653-4b76-b77f-81d32bb6e919}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Domain View;FQName=XIS-Mobile::Domain View;@ENDSTEREO;$DES;$CLT={85b112de-e879-4cec-bc8a-7b1e7260e25f}$CLT;$ENDXREF;"/>
+				<extendedProperties package_name="Discovered" tagged="0"/>
+				
+				
+			<packageProperties version="1.0"/>
+        <paths/>
+        <times created="1.0" lastloaddate="1.0" lastsavedate="1.0" modified="1.0"/>
+        <flags batchload="0" batchsave="0" iscontrolled="FALSE" isprotected="FALSE" logxml="FALSE" usedtd="FALSE"/>
+      </element>
+      <element name="Module_name" scope="public" xmi:idref="_8JCvcjMSEeWtvZiUVf6gOQ" xmi:type="uml:Class">
+				<model ea_eleType="element" ea_localid="91" package="_8JCvcTMSEeWtvZiUVf6gOQ" tpos="0"/>
+				<properties isAbstract="false" isActive="false" isLeaf="false" isRoot="false" isSpecification="false" nType="0" sType="Class" scope="public" stereotype="XisEntity"/>
+				<project author="User" complexity="1" created="2015-08-26 15:24:13" modified="2015-08-26 15:24:13" phase="1.0" status="Proposed" version="1.0"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<modelDocument/>
 				<tags>
-					<tag xmi:id="EAID_003DFCC1_03B3_2e03_9805_AABF3DF5FAB9" name="name" modelElement="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4"/>
-					<tag xmi:id="EAID_80C22EF1_2363_ac23_9E94_195FAA20F41D" name="persistent" value="true#NOTES#Values: true,false&#xA;Default: true&#xA;" modelElement="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4"/>
+					<tag modelElement="_8JCvcjMSEeWtvZiUVf6gOQ" name="name" value="Module_name" xmi:id="a5e8439e_909c_4f5d_b413_8bfc3ce7d24c"/>
+					<tag modelElement="_8JCvcjMSEeWtvZiUVf6gOQ" name="persistent" value="true#NOTES#Values: true,false&#10;Default: true&#10;" xmi:id="fd88b85f_0617_4f70_a3bc_c0f5afdb7a60"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={46A01F36-7114-40b5-BF04-E055D5C53540}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntity;FQName=XIS-Mobile::XisEntity;@ENDSTEREO;$DES;$CLT={DED4A646-C9B6-40eb-BC48-66A62D4322A4}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
-				<extendedProperties tagged="0" package_name="XIS"/>
+				<xrefs value="$XREFPROP=$XID={8fafdff4-d550-4680-bd39-60a6abb5d655}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntity;FQName=XIS-Mobile::XisEntity;@ENDSTEREO;$DES;$CLT={_8JCvcjMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+				<extendedProperties package_name="Discovered" tagged="0"/>
+				<attributes>
+					
+				<attribute name="EN" scope="Public" xmi:idref="_8JCvczMSEeWtvZiUVf6gOQ">
+						<initial/>
+						<documentation/>
+						<model ea_guid="{_8JCvczMSEeWtvZiUVf6gOQ}" ea_localid="215"/>
+						<properties changeability="changeable" collection="false" derived="0" duplicates="0" length="0" type="int"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag name="name" value="EN" xmi:id="ca4965f1-ab74-414d-8fd0-3018cc8ce238"/>
+							<tag name="value" xmi:id="03b17259-a62d-478e-b27a-21dc0c018fe0"/>
+							<tag name="type" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#10;Default: Integer&#10;" value="Integer" xmi:id="262c43f3-5556-4b34-8af5-a1454c107b42"/>
+							<tag name="nullable" notes="Values: true,false&#10;Default: true&#10;" value="true" xmi:id="2e82bda6-c67a-4544-840f-f71f4d92670d"/>
+							<tag name="isKey" notes="Values: true,false&#10;Default: false&#10;" value="false" xmi:id="699fa962-1b0f-422e-a329-6ebf2e767291"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;" xrefs="$XREFPROP=$XID={1c864606-7b29-415c-b0b4-e80671e51115}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={_8JCvczMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+					</attribute>
+          <attribute name="FR" scope="Public" xmi:idref="_8JCvdjMSEeWtvZiUVf6gOQ">
+						<initial/>
+						<documentation/>
+						<model ea_guid="{_8JCvdjMSEeWtvZiUVf6gOQ}" ea_localid="215"/>
+						<properties changeability="changeable" collection="false" derived="0" duplicates="0" length="0" type="int"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag name="name" value="FR" xmi:id="8e2bf192-1770-49b3-85fe-08d934fc5c6f"/>
+							<tag name="value" xmi:id="d828b48c-dbb7-41f7-b757-acaf766dd793"/>
+							<tag name="type" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#10;Default: Integer&#10;" value="Integer" xmi:id="c3a1dc2a-5578-4da8-ba04-af0abd1616df"/>
+							<tag name="nullable" notes="Values: true,false&#10;Default: true&#10;" value="true" xmi:id="0c6dabd5-0569-47f9-8cad-a6ca38598d56"/>
+							<tag name="isKey" notes="Values: true,false&#10;Default: false&#10;" value="false" xmi:id="5ab0b92f-f6cf-4010-bfaa-c58cc71be009"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;" xrefs="$XREFPROP=$XID={b0f89d7f-ae49-4b86-ae00-86b2dfd5e80e}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={_8JCvdjMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+					</attribute>
+        </attributes>
 				<links>
-					<Association xmi:id="EAID_DC897FCD_D991_41ff_822E_6FF843682246" start="EAID_FF398193_5F9A_40d7_92BF_A541869D559F" end="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4"/>
+					<Association end="EAID_7EB9DBA2_9FD5_478c_A347_68BA5432225B" start="EAID_D7152029_3BBC_4f56_9553_7D7380EBB0AF" xmi:id="EAID_71B82136_7FD8_4383_9533_C0D52835D632"/>
 				</links>
-			</element> -->
-		</elements>
+			</element>
+      <element name="Discovered" scope="public" xmi:idref="_8JCveTMSEeWtvZiUVf6gOQ" xmi:type="uml:Class">
+				<model ea_eleType="element" ea_localid="91" package="_8JCvcTMSEeWtvZiUVf6gOQ" tpos="0"/>
+				<properties isAbstract="false" isActive="false" isLeaf="false" isRoot="false" isSpecification="false" nType="0" sType="Class" scope="public" stereotype="XisEntity"/>
+				<project author="User" complexity="1" created="2015-08-26 15:24:13" modified="2015-08-26 15:24:13" phase="1.0" status="Proposed" version="1.0"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<modelDocument/>
+				<tags>
+					<tag modelElement="_8JCveTMSEeWtvZiUVf6gOQ" name="name" value="Discovered" xmi:id="ece12ccd_8df6_4fa8_a86a_f0423b827039"/>
+					<tag modelElement="_8JCveTMSEeWtvZiUVf6gOQ" name="persistent" value="true#NOTES#Values: true,false&#10;Default: true&#10;" xmi:id="acf31fc7_f8bd_4f59_9d59_f030e5a41102"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={dbe98479-2163-42e5-9720-c163827f4971}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntity;FQName=XIS-Mobile::XisEntity;@ENDSTEREO;$DES;$CLT={_8JCveTMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+				<extendedProperties package_name="Discovered" tagged="0"/>
+				<attributes>
+					
+				<attribute name="name" scope="Public" xmi:idref="_8JCvejMSEeWtvZiUVf6gOQ">
+						<initial/>
+						<documentation/>
+						<model ea_guid="{_8JCvejMSEeWtvZiUVf6gOQ}" ea_localid="215"/>
+						<properties changeability="changeable" collection="false" derived="0" duplicates="0" length="0" type="int"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag name="name" value="name" xmi:id="e7e8bbc5-8808-47be-b12d-c699e0b1db0f"/>
+							<tag name="value" xmi:id="910dc1c8-f533-4dcc-8642-d027d48bcd87"/>
+							<tag name="type" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#10;Default: Integer&#10;" value="Integer" xmi:id="523e38e3-d405-40e7-9516-1b4f3fff9d6e"/>
+							<tag name="nullable" notes="Values: true,false&#10;Default: true&#10;" value="true" xmi:id="aa5b560a-add2-44d2-9d09-a0379d850a38"/>
+							<tag name="isKey" notes="Values: true,false&#10;Default: false&#10;" value="false" xmi:id="2ed4589d-6818-4111-8040-964894102f16"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;" xrefs="$XREFPROP=$XID={9b910883-cf52-486e-80d8-b7cb0cc86b57}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={_8JCvejMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+					</attribute>
+          <attribute name="latitude" scope="Public" xmi:idref="_8JCvfTMSEeWtvZiUVf6gOQ">
+						<initial/>
+						<documentation/>
+						<model ea_guid="{_8JCvfTMSEeWtvZiUVf6gOQ}" ea_localid="215"/>
+						<properties changeability="changeable" collection="false" derived="0" duplicates="0" length="0" type="int"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag name="name" value="latitude" xmi:id="adff60f1-d3d0-4eee-8eec-1810ea3076a0"/>
+							<tag name="value" xmi:id="2682e6fa-93c1-4a50-a422-763a7d21431d"/>
+							<tag name="type" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#10;Default: Integer&#10;" value="Integer" xmi:id="89ff7274-4325-4fd9-b149-a1fc8e90a3c6"/>
+							<tag name="nullable" notes="Values: true,false&#10;Default: true&#10;" value="true" xmi:id="376ba12e-0ef7-438c-9a6e-1296a4eaa27c"/>
+							<tag name="isKey" notes="Values: true,false&#10;Default: false&#10;" value="false" xmi:id="a7638fb3-a340-4516-8cd2-9de4e6a16001"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;" xrefs="$XREFPROP=$XID={2476df91-3ad4-46b2-b317-489a3c0822af}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={_8JCvfTMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+					</attribute>
+          <attribute name="longitude" scope="Public" xmi:idref="_8JCvgDMSEeWtvZiUVf6gOQ">
+						<initial/>
+						<documentation/>
+						<model ea_guid="{_8JCvgDMSEeWtvZiUVf6gOQ}" ea_localid="215"/>
+						<properties changeability="changeable" collection="false" derived="0" duplicates="0" length="0" type="int"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag name="name" value="longitude" xmi:id="678b1d74-237d-420d-91d3-ff5b092fb798"/>
+							<tag name="value" xmi:id="cc9a8547-45ee-4063-8d27-d5f551afdd8d"/>
+							<tag name="type" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#10;Default: Integer&#10;" value="Integer" xmi:id="68552fe2-a41f-4c1d-a27b-257eea56aecc"/>
+							<tag name="nullable" notes="Values: true,false&#10;Default: true&#10;" value="true" xmi:id="d35911bf-4894-495b-80a4-798a35a472bf"/>
+							<tag name="isKey" notes="Values: true,false&#10;Default: false&#10;" value="false" xmi:id="9692e5bb-bd12-405a-91e6-651dfafce82f"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;" xrefs="$XREFPROP=$XID={f27e1aa7-db6c-4f2c-9395-12e6694e7cf7}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={_8JCvgDMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+					</attribute>
+          <attribute name="country_code" scope="Public" xmi:idref="_8JCvgzMSEeWtvZiUVf6gOQ">
+						<initial/>
+						<documentation/>
+						<model ea_guid="{_8JCvgzMSEeWtvZiUVf6gOQ}" ea_localid="215"/>
+						<properties changeability="changeable" collection="false" derived="0" duplicates="0" length="0" type="int"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag name="name" value="country_code" xmi:id="b1754f32-2f27-45ce-a14d-55412f2929ed"/>
+							<tag name="value" xmi:id="0b76344b-e8af-419f-ab72-d1267432dbaa"/>
+							<tag name="type" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#10;Default: Integer&#10;" value="Integer" xmi:id="d22a135c-80c6-4ec3-a410-32cef75ac1ce"/>
+							<tag name="nullable" notes="Values: true,false&#10;Default: true&#10;" value="true" xmi:id="a9c2165f-066c-4c11-8315-7b81695e16ed"/>
+							<tag name="isKey" notes="Values: true,false&#10;Default: false&#10;" value="false" xmi:id="50d1e87d-1c58-4411-b2d2-5e8414cbb4e7"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;" xrefs="$XREFPROP=$XID={23257a33-7495-4401-bc16-da392ca416ba}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={_8JCvgzMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+					</attribute>
+          <attribute name="instance_id" scope="Public" xmi:idref="_8JCvhjMSEeWtvZiUVf6gOQ">
+						<initial/>
+						<documentation/>
+						<model ea_guid="{_8JCvhjMSEeWtvZiUVf6gOQ}" ea_localid="215"/>
+						<properties changeability="changeable" collection="false" derived="0" duplicates="0" length="0" type="int"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag name="name" value="instance_id" xmi:id="f4aec3dc-822e-42cc-96ed-1613d062c006"/>
+							<tag name="value" xmi:id="3ceec525-55de-4695-9d0b-1e82807d48be"/>
+							<tag name="type" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#10;Default: Integer&#10;" value="Integer" xmi:id="63a5d48d-db1d-4c72-8673-341520f12568"/>
+							<tag name="nullable" notes="Values: true,false&#10;Default: true&#10;" value="true" xmi:id="b2709bd0-d9f2-4b07-a104-cf564d8387a4"/>
+							<tag name="isKey" notes="Values: true,false&#10;Default: false&#10;" value="false" xmi:id="9dbaedf9-8c23-43dd-8ffc-60cc8a0f3054"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;" xrefs="$XREFPROP=$XID={503fd4af-1cca-4587-8251-f7cdbf59f9dc}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={_8JCvhjMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+					</attribute>
+        </attributes>
+				<links>
+					<Association end="EAID_7EB9DBA2_9FD5_478c_A347_68BA5432225B" start="EAID_D7152029_3BBC_4f56_9553_7D7380EBB0AF" xmi:id="EAID_71B82136_7FD8_4383_9533_C0D52835D632"/>
+				</links>
+			</element>
+      <element name="Population" scope="public" xmi:idref="_8JCviTMSEeWtvZiUVf6gOQ" xmi:type="uml:Class">
+				<model ea_eleType="element" ea_localid="91" package="_8JCvcTMSEeWtvZiUVf6gOQ" tpos="0"/>
+				<properties isAbstract="false" isActive="false" isLeaf="false" isRoot="false" isSpecification="false" nType="0" sType="Class" scope="public" stereotype="XisEntity"/>
+				<project author="User" complexity="1" created="2015-08-26 15:24:13" modified="2015-08-26 15:24:13" phase="1.0" status="Proposed" version="1.0"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<modelDocument/>
+				<tags>
+					<tag modelElement="_8JCviTMSEeWtvZiUVf6gOQ" name="name" value="Population" xmi:id="4284652a_db93_4d2f_baf5_ea235d51d3f6"/>
+					<tag modelElement="_8JCviTMSEeWtvZiUVf6gOQ" name="persistent" value="true#NOTES#Values: true,false&#10;Default: true&#10;" xmi:id="a4888453_15f0_4632_8312_a875cba2d514"/>
+				</tags>
+				<xrefs value="$XREFPROP=$XID={e40b03a7-8bef-44ff-ace6-55c0ab9de7dd}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntity;FQName=XIS-Mobile::XisEntity;@ENDSTEREO;$DES;$CLT={_8JCviTMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+				<extendedProperties package_name="Discovered" tagged="0"/>
+				<attributes>
+					
+				<attribute name="module_type" scope="Public" xmi:idref="_8JCvijMSEeWtvZiUVf6gOQ">
+						<initial/>
+						<documentation/>
+						<model ea_guid="{_8JCvijMSEeWtvZiUVf6gOQ}" ea_localid="215"/>
+						<properties changeability="changeable" collection="false" derived="0" duplicates="0" length="0" type="int"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag name="name" value="module_type" xmi:id="9f5745b6-c907-4bce-97d4-72bea02e0328"/>
+							<tag name="value" xmi:id="ce6a83b1-6a37-4f9f-bbca-c03827de0a73"/>
+							<tag name="type" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#10;Default: Integer&#10;" value="Integer" xmi:id="90f8e5ae-bce9-4bc4-8dd2-0fb13a13a237"/>
+							<tag name="nullable" notes="Values: true,false&#10;Default: true&#10;" value="true" xmi:id="02634322-85d6-4996-9a0b-f170bf1660d2"/>
+							<tag name="isKey" notes="Values: true,false&#10;Default: false&#10;" value="false" xmi:id="0a48890f-7911-4512-a18f-56aa187c1702"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;" xrefs="$XREFPROP=$XID={f495108b-8bc3-454b-b9f4-c16d897ff712}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={_8JCvijMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+					</attribute>
+          <attribute name="url" scope="Public" xmi:idref="_8JCvjTMSEeWtvZiUVf6gOQ">
+						<initial/>
+						<documentation/>
+						<model ea_guid="{_8JCvjTMSEeWtvZiUVf6gOQ}" ea_localid="215"/>
+						<properties changeability="changeable" collection="false" derived="0" duplicates="0" length="0" type="int"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag name="name" value="url" xmi:id="651aff6b-2091-41b8-8e8e-14cd8551c898"/>
+							<tag name="value" xmi:id="b82fbe71-22ce-495a-ad02-8a52fd69be36"/>
+							<tag name="type" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#10;Default: Integer&#10;" value="Integer" xmi:id="e8369807-7d8b-4874-ab1e-cf50fec95aec"/>
+							<tag name="nullable" notes="Values: true,false&#10;Default: true&#10;" value="true" xmi:id="73aa9f1a-c0f1-455a-92e5-3d9a6bea11aa"/>
+							<tag name="isKey" notes="Values: true,false&#10;Default: false&#10;" value="false" xmi:id="7e794a6d-0e8b-439f-aa1b-0be54b85e425"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;" xrefs="$XREFPROP=$XID={e466a9bb-5301-4206-bffc-87da4a5a56c6}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={_8JCvjTMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+					</attribute>
+          <attribute name="value" scope="Public" xmi:idref="_8JCvkDMSEeWtvZiUVf6gOQ">
+						<initial/>
+						<documentation/>
+						<model ea_guid="{_8JCvkDMSEeWtvZiUVf6gOQ}" ea_localid="215"/>
+						<properties changeability="changeable" collection="false" derived="0" duplicates="0" length="0" type="int"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag name="name" value="value" xmi:id="c62f2bfb-b1a7-407b-b761-8e5e6067df3c"/>
+							<tag name="value" xmi:id="6910d4b1-6af1-4e04-9712-8c84e012afd7"/>
+							<tag name="type" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#10;Default: Integer&#10;" value="Integer" xmi:id="007b964d-16bc-4852-b82b-8001a4bfcdf0"/>
+							<tag name="nullable" notes="Values: true,false&#10;Default: true&#10;" value="true" xmi:id="4331d1e6-7e95-471b-b1e0-377f0994aaae"/>
+							<tag name="isKey" notes="Values: true,false&#10;Default: false&#10;" value="false" xmi:id="df5e77bb-dcd3-4b61-8567-7680004a653d"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;" xrefs="$XREFPROP=$XID={476f753e-c6c9-485f-ab63-b61355c3e453}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={_8JCvkDMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+					</attribute>
+          <attribute name="updated_at" scope="Public" xmi:idref="_8JCvkzMSEeWtvZiUVf6gOQ">
+						<initial/>
+						<documentation/>
+						<model ea_guid="{_8JCvkzMSEeWtvZiUVf6gOQ}" ea_localid="215"/>
+						<properties changeability="changeable" collection="false" derived="0" duplicates="0" length="0" type="int"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag name="name" value="updated_at" xmi:id="90ec6dbf-c269-4c37-b328-01e121fdb89f"/>
+							<tag name="value" xmi:id="88fdb9c2-50b7-45ac-9010-40505317a465"/>
+							<tag name="type" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#10;Default: Integer&#10;" value="Integer" xmi:id="f4b1c799-df4b-4436-bf21-511079600042"/>
+							<tag name="nullable" notes="Values: true,false&#10;Default: true&#10;" value="true" xmi:id="783db4e4-d6ea-4924-8aea-37f58f1a3a36"/>
+							<tag name="isKey" notes="Values: true,false&#10;Default: false&#10;" value="false" xmi:id="2e2a46a6-79ca-4f1b-a7aa-39b360f3fcdb"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;" xrefs="$XREFPROP=$XID={82b93c6f-4f97-47e1-874e-3290ce4ccbb9}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={_8JCvkzMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+					</attribute>
+        </attributes>
+				<links>
+					<Association end="EAID_7EB9DBA2_9FD5_478c_A347_68BA5432225B" start="EAID_D7152029_3BBC_4f56_9553_7D7380EBB0AF" xmi:id="EAID_71B82136_7FD8_4383_9533_C0D52835D632"/>
+				</links>
+			</element>
+    </elements>
 		<connectors>
-			<!-- <connector xmi:idref="EAID_DC897FCD_D991_41ff_822E_6FF843682246">
-				<source xmi:idref="EAID_FF398193_5F9A_40d7_92BF_A541869D559F">
-					<model ea_localid="66" type="Class" name="Class1"/>
-					<role visibility="Public" targetScope="instance"/>
+			
+		<connector xmi:idref="_8JCvljMSEeWtvZiUVf6gOQ">
+				<source xmi:idref="_8JCvlzMSEeWtvZiUVf6gOQ">
+					<model ea_localid="91" name="Class1" type="Class"/>
+					<role targetScope="instance" visibility="Public"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<modifiers changeable="none" isNavigable="false" isOrdered="false"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
 					<documentation/>
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4">
-					<model ea_localid="67" type="Class" name="Class2"/>
-					<role visibility="Public" targetScope="instance"/>
+				<target xmi:idref="_8JCvmjMSEeWtvZiUVf6gOQ">
+					<model ea_localid="92" name="Class2" type="Class"/>
+					<role targetScope="instance" visibility="Public"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
-					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<modifiers changeable="none" isNavigable="false" isOrdered="false"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
 					<documentation/>
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="29"/>
-				<properties ea_type="Association" stereotype="XisEntityAssociation" direction="Source -&gt; Destination"/>
-				<modifiers isRoot="false" isLeaf="false"/>
+				<model ea_localid="38"/>
+				<properties direction="Source -&gt; Destination" ea_type="Association" stereotype="XisEntityAssociation"/>
+				<modifiers isLeaf="false" isRoot="false"/>
 				<parameterSubstitutions/>
 				<documentation/>
-				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
-				<labels mb=" &#xA;«XisEntityAssociation»"/>
-				<extendedProperties conditional=" &#xA;«XisEntityAssociation»" virtualInheritance="0"/>
+				<appearance headStyle="0" lineStyle="0" linecolor="-1" linemode="3" linewidth="0" seqno="0"/>
+				<labels mb=" &#10;«XisEntityAssociation»"/>
+				<extendedProperties conditional=" &#10;«XisEntityAssociation»" virtualInheritance="0"/>
 				<style/>
-				<xrefs value="$XREFPROP=$XID={AB86C47B-F462-40e4-88B5-CF47CAD9A49E}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAssociation;FQName=XIS-Mobile::XisEntityAssociation;@ENDSTEREO;$DES;$CLT={DC897FCD-D991-41ff-822E-6FF843682246}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={7234ba2e-533f-44f3-9e8e-be0962f9dc5d}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAssociation;FQName=XIS-Mobile::XisEntityAssociation;@ENDSTEREO;$DES;$CLT={_8JCvljMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
 				<tags>
-					<tag xmi:id="EAID_991FEF73_C402_0ec4_9AC8_C47E58FF4799" name="roleName"/>
+					<tag name="roleName" xmi:id="b7d766f0_edfe_4312_a8aa_5f475c428233"/>
 				</tags>
-			</connector> -->
-		</connectors>
+			</connector>
+      <connector xmi:idref="_8JCvnTMSEeWtvZiUVf6gOQ">
+				<source xmi:idref="_8JCvnjMSEeWtvZiUVf6gOQ">
+					<model ea_localid="91" name="Class1" type="Class"/>
+					<role targetScope="instance" visibility="Public"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers changeable="none" isNavigable="false" isOrdered="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="_8JCvoTMSEeWtvZiUVf6gOQ">
+					<model ea_localid="92" name="Class2" type="Class"/>
+					<role targetScope="instance" visibility="Public"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers changeable="none" isNavigable="false" isOrdered="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="38"/>
+				<properties direction="Source -&gt; Destination" ea_type="Association" stereotype="XisEntityAssociation"/>
+				<modifiers isLeaf="false" isRoot="false"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance headStyle="0" lineStyle="0" linecolor="-1" linemode="3" linewidth="0" seqno="0"/>
+				<labels mb=" &#10;«XisEntityAssociation»"/>
+				<extendedProperties conditional=" &#10;«XisEntityAssociation»" virtualInheritance="0"/>
+				<style/>
+				<xrefs value="$XREFPROP=$XID={01ef27b6-1830-474f-872a-fc95c5ae3c66}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAssociation;FQName=XIS-Mobile::XisEntityAssociation;@ENDSTEREO;$DES;$CLT={_8JCvnTMSEeWtvZiUVf6gOQ}$CLT;$SUP=&amp;lt;none&amp;gt;$SUP;$ENDXREF;"/>
+				<tags>
+					<tag name="roleName" xmi:id="d4b09d66_7355_4e6f_9629_6946da6b3be0"/>
+				</tags>
+			</connector>
+    </connectors>
 		<primitivetypes>
 			<packagedElement name="EA_PrimitiveTypes_Package" visibility="public" xmi:id="EAPrimitiveTypesPackage" xmi:type="uml:Package">
 				<packagedElement name="EA_Java_Types_Package" visibility="public" xmi:id="EAJavaTypesPackage" xmi:type="uml:Package">
@@ -762,6 +1092,19 @@
 				</packagedElement>
 			</uml:Profile>
 		</profiles>
+		<diagrams>
+			<diagram xmi:id="15b4e7ea_88e3_4e8c_bd50_392f227795b7">
+				<model localID="25" owner="_8JCvcTMSEeWtvZiUVf6gOQ" package="_8JCvcTMSEeWtvZiUVf6gOQ"/>
+				<properties name="Domain Model" type="Logical"/>
+				<project author="User" created="2015-08-26 23:54:38" modified="2015-08-26 23:54:38" version="1.0"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=XIS-Mobile_Diagrams::DomainViewModel;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;SaveTag=BA5FFFD5;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
+				<extendedProperties/>
+				<elements/>
+			</diagram>
+		</diagrams>
 	</xmi:Extension>
 
   <uml:Model name="DiscoveredModel" xmi:id="_8JCvcDMSEeWtvZiUVf6gOQ">

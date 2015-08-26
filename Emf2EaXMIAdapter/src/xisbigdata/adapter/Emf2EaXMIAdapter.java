@@ -3,6 +3,9 @@ package xisbigdata.adapter;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.UUID;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -60,6 +63,8 @@ public class Emf2EaXMIAdapter {
 						assocs.add(assoc);
 					}
 					
+					Element connectorTemplate = (Element) docEA.getElementsByTagName("connector").item(0);
+					
 					for (Element ass : assocs) {
 						//Add Missing Attributes
 						ass.setAttribute("visibility", "public");
@@ -79,16 +84,201 @@ public class Emf2EaXMIAdapter {
 						((Element)ownedEnds.item(0)).appendChild(typeTag);
 						
 						//MemberEnd #2
-						memberEnd = docEA.createElement("memberEnd");
+						Element memberEnd2 = docEA.createElement("memberEnd");
 						value = ((Element)ownedEnds.item(1)).getAttribute("xmi:id"); 
-						memberEnd.setAttribute("xmi:idref", value);
-						ass.insertBefore(memberEnd, null);
+						memberEnd2.setAttribute("xmi:idref", value);
+						ass.insertBefore(memberEnd2, null);
 						
 						type = ((Element)ownedEnds.item(1)).getAttribute("type");
 						typeTag = docEA.createElement("type");
 						typeTag.setAttribute("xmi:idref", type);
 						((Element)ownedEnds.item(1)).appendChild(typeTag);
+						
+						//Extensions/Connectors/Connector
+						Element connectorExt = (Element) connectorTemplate.cloneNode(true);
+						connectorExt.setAttribute("xmi:idref", ass.getAttribute("xmi:id"));
+						//Connector/Source
+						Element source = (Element) connectorExt.getElementsByTagName("source").item(0);
+						source.setAttribute("xmi:idref", memberEnd.getAttribute("xmi:idref"));
+						//Connector/Target
+						Element target = (Element) connectorExt.getElementsByTagName("target").item(0);
+						target.setAttribute("xmi:idref", memberEnd2.getAttribute("xmi:idref"));
+						//Connector/xrefs
+						Element xrefs = (Element) connectorExt.getElementsByTagName("xrefs").item(2);
+						String xrefsValue = "$XREFPROP=$XID={"+ UUID.randomUUID() + "}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAssociation;FQName=XIS-Mobile::XisEntityAssociation;@ENDSTEREO;$DES;$CLT={" + ass.getAttribute("xmi:id")  + "}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;";
+						xrefs.setAttribute("value", xrefsValue);
+						//Connector/tags
+						Element tags = (Element) connectorExt.getElementsByTagName("tags").item(2);
+						Element tag = (Element) tags.getElementsByTagName("tag").item(0);
+						tag.setAttribute("xmi:id", UUID.randomUUID().toString().replace("-", "_"));
+						connectorTemplate.getParentNode().appendChild(connectorExt);
 					}
+					
+					//Remove Connector Template
+					connectorTemplate.getParentNode().removeChild(connectorTemplate);
+					
+					//Set Diagram Properties
+					Element diagram = (Element) docEA.getElementsByTagName("diagram").item(0);
+					diagram.setAttribute("xmi:id", UUID.randomUUID().toString().replace("-", "_"));
+					//diagram/model
+					Element diagModel = (Element) diagram.getElementsByTagName("model").item(0);
+					diagModel.setAttribute("owner", umlPackage.getAttribute("xmi:id"));
+					diagModel.setAttribute("package", umlPackage.getAttribute("xmi:id"));
+					//diagram/project
+					Element diagProject = (Element) diagram.getElementsByTagName("project").item(0);
+					String dateTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+					diagProject.setAttribute("created", dateTime);
+					diagProject.setAttribute("modified", dateTime);
+					
+					//Set Elements
+					Element elementTemplate = (Element) docEA.getElementsByTagName("element").item(0);
+					Element elementExt = (Element) elementTemplate.cloneNode(true);
+					elementExt.setAttribute("xmi:idref", umlPackage.getAttribute("xmi:id"));
+					elementExt.setAttribute("xmi:type", umlPackage.getAttribute("xmi:type"));
+					elementExt.setAttribute("name", umlPackage.getAttribute("name"));
+					//Element/Model
+					Element modelEl = (Element) elementExt.getElementsByTagName("model").item(0);
+					modelEl.setAttribute("package", UUID.randomUUID().toString().replace("-", "_"));
+					modelEl.setAttribute("package2", UUID.randomUUID().toString().replace("-", "_"));
+					modelEl.setAttribute("ea_eleType", "package");
+					//Element/properties
+					Element propertiesEl = (Element) elementExt.getElementsByTagName("properties").item(0);
+					propertiesEl.setAttribute("sType", "Package");
+					propertiesEl.setAttribute("stereotype", "Domain View");
+					propertiesEl.removeAttribute("isAbstract");
+					propertiesEl.removeAttribute("isActive");
+					propertiesEl.removeAttribute("isLeaf");
+					propertiesEl.removeAttribute("isRoot");
+					//Element/Tags
+					Element tagsEl = (Element) elementExt.getElementsByTagName("tags").item(0);
+					while (tagsEl.hasChildNodes()) {
+						tagsEl.removeChild(tagsEl.getFirstChild());
+					}
+					//Element/xrefs
+					Element xrefs = (Element) elementExt.getElementsByTagName("xrefs").item(0);
+					String guid = UUID.randomUUID().toString();
+					String xrefsValue = "$XREFPROP=$XID={" + UUID.randomUUID() + "}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=_defaultDiagramType@ENDNAME;@TYPE=string@ENDTYPE;@VALU=XIS-Mobile_Diagrams::DomainViewModel@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;@PROP=@NAME=_makeComposite@ENDNAME;@TYPE=string@ENDTYPE;@VALU=true@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={" + guid + "}$CLT;$ENDXREF;$XREFPROP=$XID={" + UUID.randomUUID() + "}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Domain View;FQName=XIS-Mobile::Domain View;@ENDSTEREO;$DES;$CLT={" + guid + "}$CLT;$ENDXREF;";
+					xrefs.setAttribute("value", xrefsValue);
+					//Element/extendedProperties
+					Element extendedProperties = (Element) elementExt.getElementsByTagName("extendedProperties").item(0);
+					extendedProperties.setAttribute("package_name", umlPackage.getAttribute("name"));
+					//Element/packageProperties
+					Element packageProperties = (Element) docEA.createElement("packageProperties");
+					packageProperties.setAttribute("version", "1.0");
+					elementExt.insertBefore(packageProperties, null);
+					//Element/paths
+					Element pathsEl = (Element) docEA.createElement("paths");
+					elementExt.insertBefore(pathsEl, null);
+					//Element/times
+					Element timesEl = (Element) docEA.createElement("times");
+					timesEl.setAttribute("created", "1.0");
+					timesEl.setAttribute("modified", "1.0");
+					timesEl.setAttribute("lastloaddate", "1.0");
+					timesEl.setAttribute("lastsavedate", "1.0");
+					elementExt.insertBefore(timesEl, null);
+					//Element/flags
+					Element flagsEl = (Element) docEA.createElement("flags");
+					flagsEl.setAttribute("iscontrolled", "FALSE");
+					flagsEl.setAttribute("isprotected", "FALSE");
+					flagsEl.setAttribute("batchsave", "0");
+					flagsEl.setAttribute("batchload", "0");
+					flagsEl.setAttribute("usedtd", "FALSE");
+					flagsEl.setAttribute("logxml", "FALSE");
+					elementExt.insertBefore(flagsEl, null);
+					//Remove Element/attributes
+					Element attributesEl = (Element) elementExt.getElementsByTagName("attributes").item(0);
+					elementExt.removeChild(attributesEl);
+					//Remove Element/links
+					Element linksEl = (Element) elementExt.getElementsByTagName("links").item(0);
+					elementExt.removeChild(linksEl);
+					elementTemplate.getParentNode().insertBefore(elementExt, null);
+					
+					NodeList packageChildren = umlPackage.getChildNodes();
+					
+					for (int i = 0; i < packageChildren.getLength(); i++) {
+						if (packageChildren.item(i) instanceof Element) {
+						Element el = (Element) packageChildren.item(i);
+						
+							if (el.getAttribute("xmi:type").equals("uml:Class")) {
+								elementExt = (Element) elementTemplate.cloneNode(true);
+								elementExt.setAttribute("xmi:idref", el.getAttribute("xmi:id"));
+								elementExt.setAttribute("xmi:type", el.getAttribute("xmi:type"));
+								elementExt.setAttribute("name", el.getAttribute("name"));
+								//Element/Model
+								modelEl = (Element) elementExt.getElementsByTagName("model").item(0);
+								modelEl.setAttribute("package", umlPackage.getAttribute("xmi:id"));
+								//Element/Tags
+								tagsEl = (Element) elementExt.getElementsByTagName("tags").item(0);
+								Element tag = (Element) tagsEl.getElementsByTagName("tag").item(0);
+								tag.setAttribute("xmi:id", UUID.randomUUID().toString().replace("-", "_"));
+								tag.setAttribute("value", el.getAttribute("name"));
+								tag.setAttribute("modelElement", el.getAttribute("xmi:id"));
+								tag = (Element) tagsEl.getElementsByTagName("tag").item(1);
+								tag.setAttribute("xmi:id", UUID.randomUUID().toString().replace("-", "_"));
+								tag.setAttribute("modelElement", el.getAttribute("xmi:id"));
+								//Element/xrefs
+								xrefs = (Element) elementExt.getElementsByTagName("xrefs").item(0);
+								xrefsValue = "$XREFPROP=$XID={" + UUID.randomUUID() + "}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntity;FQName=XIS-Mobile::XisEntity;@ENDSTEREO;$DES;$CLT={" + el.getAttribute("xmi:id") + "}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;";
+								xrefs.setAttribute("value", xrefsValue);
+								//Element/extendedProperties
+								extendedProperties = (Element) elementExt.getElementsByTagName("extendedProperties").item(0);
+								extendedProperties.setAttribute("package_name", umlPackage.getAttribute("name"));
+								//Element/attributes
+								NodeList attrList = el.getElementsByTagName("ownedAttribute");
+								Element attributes = (Element) elementExt.getElementsByTagName("attributes").item(0);
+								Element attributeTemplate = (Element) attributes.getElementsByTagName("attribute").item(0);
+								
+								for (int j = 0; j < attrList.getLength(); j++) {
+									Element attr = (Element) attrList.item(j);
+									Element attributeExt = (Element) attributeTemplate.cloneNode(true);
+									attributeExt.setAttribute("xmi:idref", attr.getAttribute("xmi:id"));
+									attributeExt.setAttribute("name", attr.getAttribute("name"));
+									//attribute/model
+									Element attrModel = (Element) attributeExt.getElementsByTagName("model").item(0);
+									attrModel.setAttribute("ea_guid", "{" + attr.getAttribute("xmi:id") + "}");
+									//attribute/properties
+									Element attrProperties = (Element) attributeExt.getElementsByTagName("properties").item(0);
+									attrProperties.setAttribute("type", getAttributeType(attr));
+									//attribute/tags
+									Element attrTags = (Element) attributeExt.getElementsByTagName("tags").item(0);
+									NodeList tagsList = attrTags.getElementsByTagName("tag");
+									Element attrTag = (Element) tagsList.item(0);
+									//name
+									attrTag.setAttribute("xmi:id", UUID.randomUUID().toString());
+									attrTag.setAttribute("value", attr.getAttribute("name"));
+									//value
+									attrTag = (Element) tagsList.item(1);
+									attrTag.setAttribute("xmi:id", UUID.randomUUID().toString());
+									//type
+									attrTag = (Element) tagsList.item(2);
+									attrTag.setAttribute("xmi:id", UUID.randomUUID().toString());
+									attrTag.setAttribute("value", getXisEntityAttributeType(attrProperties.getAttribute("type")));
+									//nullable
+									attrTag = (Element) tagsList.item(3);
+									attrTag.setAttribute("xmi:id", UUID.randomUUID().toString());
+									//isKey
+									attrTag = (Element) tagsList.item(4);
+									attrTag.setAttribute("xmi:id", UUID.randomUUID().toString());
+									//attribute/xrefs
+									Element attrXrefs = (Element) attributeExt.getElementsByTagName("xrefs").item(0);
+									String attrXrefsValue = "$XREFPROP=$XID={" + UUID.randomUUID() + "}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={"+ attr.getAttribute("xmi:id") + "}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;";
+									attrXrefs.setAttribute("xrefs", attrXrefsValue);
+									attributeTemplate.getParentNode().appendChild(attributeExt);
+								}
+								
+								//Delete Attribute Template
+								attributeTemplate.getParentNode().removeChild(attributeTemplate);
+								
+								//Element/links
+								linksEl = (Element) elementExt.getElementsByTagName("links").item(0);
+								//TODO Properly set the links attributes
+								elementTemplate.getParentNode().insertBefore(elementExt, null);
+							}
+						}
+					}
+					
+					//Delete Element Template
+					elementTemplate.getParentNode().removeChild(elementTemplate);
 					
 					//Relocate XIS-Mobile Stereotypes
 					Element umlModel = (Element) docEA.getElementsByTagName("uml:Model").item(0);
@@ -163,5 +353,31 @@ public class Emf2EaXMIAdapter {
 			el.setAttribute("xmi:idref", "EAJava_String"); 
 		}
 	}
+	
+	private static String getAttributeType(Element el) {
+		String attrType = "int";
+		String type = ((Element)el.getElementsByTagName("type").item(0)).getAttribute("xmi:idref");
+		
+		if (type.contains("double")) {
+			attrType = "double";
+		} else if (type.contains("String")) {
+			attrType = "String";
+		} else if (type.contains("bool")) {
+			attrType = "bool";
+		}
+		return attrType;
+	}
 
+	private static String getXisEntityAttributeType(String type) {
+		String attrType = "Integer";
+		
+		if (type.contains("double")) {
+			attrType = "Double";
+		} else if (type.contains("String")) {
+			attrType = "String";
+		} else if (type.contains("bool")) {
+			attrType = "Boolean";
+		}
+		return attrType;
+	}
 }

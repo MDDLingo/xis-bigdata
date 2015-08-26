@@ -4,28 +4,51 @@
 	<!-- Add UML Content here  -->
 	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
 		<elements>
-			<!-- <element xmi:idref="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4" xmi:type="uml:Class" name="Class2" scope="public">
-				<model package="EAPK_AAEC18C5_0B9F_46dd_92CC_CDD4E461A4DD" tpos="0" ea_localid="67" ea_eleType="element"/>
+			<element xmi:idref="EAID_D7152029_3BBC_4f56_9553_7D7380EBB0AF" xmi:type="uml:Class" name="Class1" scope="public">
+				<model package="EAPK_0E7347CF_05CD_49d3_84EF_E1162412B44F" tpos="0" ea_localid="91" ea_eleType="element"/>
 				<properties isSpecification="false" sType="Class" nType="0" scope="public" stereotype="XisEntity" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
-				<project author="User" version="1.0" phase="1.0" created="2015-07-29 14:58:00" modified="2015-07-29 14:58:00" complexity="1" status="Proposed"/>
+				<project author="User" version="1.0" phase="1.0" created="2015-08-26 15:24:13" modified="2015-08-26 15:24:13" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<modelDocument/>
 				<tags>
-					<tag xmi:id="EAID_003DFCC1_03B3_2e03_9805_AABF3DF5FAB9" name="name" modelElement="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4"/>
-					<tag xmi:id="EAID_80C22EF1_2363_ac23_9E94_195FAA20F41D" name="persistent" value="true#NOTES#Values: true,false&#xA;Default: true&#xA;" modelElement="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4"/>
+					<tag xmi:id="EAID_003DFCC1_03B3_2e03_9A3D_E667ABAF64C2" name="name" modelElement="EAID_D7152029_3BBC_4f56_9553_7D7380EBB0AF"/>
+					<tag xmi:id="EAID_80C22EF1_2363_ac23_B03B_C795A6002B11" name="persistent" value="true#NOTES#Values: true,false&#xA;Default: true&#xA;" modelElement="EAID_D7152029_3BBC_4f56_9553_7D7380EBB0AF"/>
 				</tags>
-				<xrefs value="$XREFPROP=$XID={46A01F36-7114-40b5-BF04-E055D5C53540}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntity;FQName=XIS-Mobile::XisEntity;@ENDSTEREO;$DES;$CLT={DED4A646-C9B6-40eb-BC48-66A62D4322A4}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
-				<extendedProperties tagged="0" package_name="XIS"/>
+				<xrefs value="$XREFPROP=$XID={92FF07DE-103A-44c3-9A7E-A89FE05928D6}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntity;FQName=XIS-Mobile::XisEntity;@ENDSTEREO;$DES;$CLT={D7152029-3BBC-4f56-9553-7D7380EBB0AF}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<extendedProperties tagged="0" package_name="Domain Model"/>
+				<attributes>
+					<attribute xmi:idref="EAID_0C9422BB_1838_4506_B9DA_06481996C693" name="ddd" scope="Public">
+						<initial/>
+						<documentation/>
+						<model ea_localid="215" ea_guid="{0C9422BB-1838-4506-B9DA-06481996C693}"/>
+						<properties type="String" derived="0" collection="false" length="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype stereotype="XisEntityAttribute"/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags>
+							<tag xmi:id="EAID_003DFCC1_A1E7_67a1_AE71_0D4F0BF07A8C" name="name"/>
+							<tag xmi:id="EAID_088E571D_A103_eca1_BCB4_E2E7BE8F099F" name="value"/>
+							<tag xmi:id="EAID_0041AD82_52A8_6b52_9653_C6A66EF741E5" name="type" value="Integer" notes="Values: Integer,Double,String,Boolean,Date,Time,Image,URL&#xA;Default: Integer&#xA;"/>
+							<tag xmi:id="EAID_B66D972F_5F55_915f_8A3C_A51A1DA1C700" name="nullable" value="true" notes="Values: true,false&#xA;Default: true&#xA;"/>
+							<tag xmi:id="EAID_07ACF125_B2EB_0ab2_8FA4_49B1A0EFD3B1" name="isKey" value="false" notes="Values: true,false&#xA;Default: false&#xA;"/>
+						</tags>
+						<xrefs value="$XREFPROP=$XID={91DAFB43-11FF-4e57-AB74-2955FC1C2780}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAttribute;FQName=XIS-Mobile::XisEntityAttribute;@ENDSTEREO;$DES;$CLT={0C9422BB-1838-4506-B9DA-06481996C693}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+					</attribute>
+				</attributes>
 				<links>
-					<Association xmi:id="EAID_DC897FCD_D991_41ff_822E_6FF843682246" start="EAID_FF398193_5F9A_40d7_92BF_A541869D559F" end="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4"/>
+					<Association xmi:id="EAID_71B82136_7FD8_4383_9533_C0D52835D632" start="EAID_D7152029_3BBC_4f56_9553_7D7380EBB0AF" end="EAID_7EB9DBA2_9FD5_478c_A347_68BA5432225B"/>
 				</links>
-			</element> -->
+			</element>
 		</elements>
 		<connectors>
-			<!-- <connector xmi:idref="EAID_DC897FCD_D991_41ff_822E_6FF843682246">
-				<source xmi:idref="EAID_FF398193_5F9A_40d7_92BF_A541869D559F">
-					<model ea_localid="66" type="Class" name="Class1"/>
+			<connector xmi:idref="EAID_71B82136_7FD8_4383_9533_C0D52835D632">
+				<source xmi:idref="EAID_D7152029_3BBC_4f56_9553_7D7380EBB0AF">
+					<model ea_localid="91" type="Class" name="Class1"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -35,8 +58,8 @@
 					<xrefs/>
 					<tags/>
 				</source>
-				<target xmi:idref="EAID_DED4A646_C9B6_40eb_BC48_66A62D4322A4">
-					<model ea_localid="67" type="Class" name="Class2"/>
+				<target xmi:idref="EAID_7EB9DBA2_9FD5_478c_A347_68BA5432225B">
+					<model ea_localid="92" type="Class" name="Class2"/>
 					<role visibility="Public" targetScope="instance"/>
 					<type aggregation="none" containment="Unspecified"/>
 					<constraints/>
@@ -46,7 +69,7 @@
 					<xrefs/>
 					<tags/>
 				</target>
-				<model ea_localid="29"/>
+				<model ea_localid="38"/>
 				<properties ea_type="Association" stereotype="XisEntityAssociation" direction="Source -&gt; Destination"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
@@ -55,11 +78,11 @@
 				<labels mb=" &#xA;«XisEntityAssociation»"/>
 				<extendedProperties conditional=" &#xA;«XisEntityAssociation»" virtualInheritance="0"/>
 				<style/>
-				<xrefs value="$XREFPROP=$XID={AB86C47B-F462-40e4-88B5-CF47CAD9A49E}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAssociation;FQName=XIS-Mobile::XisEntityAssociation;@ENDSTEREO;$DES;$CLT={DC897FCD-D991-41ff-822E-6FF843682246}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
+				<xrefs value="$XREFPROP=$XID={0772674D-3A29-4cbb-A661-8C7CE5DDDD2F}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAssociation;FQName=XIS-Mobile::XisEntityAssociation;@ENDSTEREO;$DES;$CLT={71B82136-7FD8-4383-9533-C0D52835D632}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
-					<tag xmi:id="EAID_991FEF73_C402_0ec4_9AC8_C47E58FF4799" name="roleName"/>
+					<tag xmi:id="EAID_991FEF73_C402_0ec4_AEDD_F6DC6A2EA01B" name="roleName"/>
 				</tags>
-			</connector> -->
+			</connector>
 		</connectors>
 		<primitivetypes>
 			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public">
@@ -762,5 +785,18 @@
 				</packagedElement>
 			</uml:Profile>
 		</profiles>
+		<diagrams>
+			<diagram xmi:id="EAID_DDC62782_6049_4a0d_A95B_A38BB89AA2C2">
+				<model package="EAPK_0E7347CF_05CD_49d3_84EF_E1162412B44F" localID="25" owner="EAPK_0E7347CF_05CD_49d3_84EF_E1162412B44F"/>
+				<properties name="Domain Model" type="Logical"/>
+				<project author="User" version="1.0" created="2015-08-26 15:24:01" modified="2015-08-26 15:24:15"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=827;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;MatrixLineWidth=1;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;ProfileData=;MDGDgm=XIS-Mobile_Diagrams::DomainViewModel;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;SaveTag=BA5FFFD5;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=0;bold=false;fcol=0;;cls=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;width=1;"/>
+				<extendedProperties/>
+				<elements/>
+			</diagram>
+		</diagrams>
 	</xmi:Extension>
 </xmi:XMI>
