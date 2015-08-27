@@ -98,11 +98,45 @@ public class Emf2EaXMIAdapter {
 						Element connectorExt = (Element) connectorTemplate.cloneNode(true);
 						connectorExt.setAttribute("xmi:idref", ass.getAttribute("xmi:id"));
 						//Connector/Source
+						Element sourceOwnedEnd = ((Element)ownedEnds.item(1));
+						Element targetOwnedEnd = ((Element)ownedEnds.item(0));
 						Element source = (Element) connectorExt.getElementsByTagName("source").item(0);
 						source.setAttribute("xmi:idref", memberEnd.getAttribute("xmi:idref"));
+						Element sourceModel = (Element) source.getElementsByTagName("model").item(0);
+						String sourceName = sourceOwnedEnd.getAttribute("name");
+						sourceModel.setAttribute("name", sourceName.substring(0, 1).toUpperCase() + sourceName.substring(1));
+						Element sourceRole = (Element) source.getElementsByTagName("role").item(0);
+						sourceRole.setAttribute("name", sourceName);
+						Element sourceType = (Element) source.getElementsByTagName("type").item(0);
+						String sourceLMult = ((Element)sourceOwnedEnd.getElementsByTagName("lowerValue").item(0)).getAttribute("value");
+						String sourceUMult = ((Element)sourceOwnedEnd.getElementsByTagName("upperValue").item(0)).getAttribute("value");
+						sourceType.setAttribute("multiplicity", sourceLMult + ".." + sourceUMult);
+						String sourceAggregation = targetOwnedEnd.getAttribute("aggregation");
+						
+						if (sourceAggregation.isEmpty()) {
+							sourceType.removeAttribute("aggregation");
+						} else {
+							sourceType.setAttribute("aggregation", sourceAggregation);
+						}
 						//Connector/Target
 						Element target = (Element) connectorExt.getElementsByTagName("target").item(0);
 						target.setAttribute("xmi:idref", memberEnd2.getAttribute("xmi:idref"));
+						Element targetModel = (Element) target.getElementsByTagName("model").item(0);
+						String targetName = targetOwnedEnd.getAttribute("name");
+						targetModel.setAttribute("name", targetName.substring(0, 1).toUpperCase() + targetName.substring(1));
+						Element targetRole = (Element) target.getElementsByTagName("role").item(0);
+						targetRole.setAttribute("name", targetName);
+						Element targetType = (Element) target.getElementsByTagName("type").item(0);
+						String targetLMult = ((Element)targetOwnedEnd.getElementsByTagName("lowerValue").item(0)).getAttribute("value");
+						String targetUMult = ((Element)targetOwnedEnd.getElementsByTagName("upperValue").item(0)).getAttribute("value");
+						targetType.setAttribute("multiplicity", targetLMult + ".." + targetUMult);
+						String targetAggregation = sourceOwnedEnd.getAttribute("aggregation");
+						
+						if (targetAggregation.isEmpty()) {
+							targetType.removeAttribute("aggregation");
+						} else {
+							targetType.setAttribute("aggregation", targetAggregation);
+						}
 						//Connector/xrefs
 						Element xrefs = (Element) connectorExt.getElementsByTagName("xrefs").item(2);
 						String xrefsValue = "$XREFPROP=$XID={"+ UUID.randomUUID() + "}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=XisEntityAssociation;FQName=XIS-Mobile::XisEntityAssociation;@ENDSTEREO;$DES;$CLT={" + ass.getAttribute("xmi:id")  + "}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;";
@@ -111,6 +145,7 @@ public class Emf2EaXMIAdapter {
 						Element tags = (Element) connectorExt.getElementsByTagName("tags").item(2);
 						Element tag = (Element) tags.getElementsByTagName("tag").item(0);
 						tag.setAttribute("xmi:id", UUID.randomUUID().toString().replace("-", "_"));
+						tag.setAttribute("value", ass.getAttribute("name"));
 						connectorTemplate.getParentNode().appendChild(connectorExt);
 					}
 					

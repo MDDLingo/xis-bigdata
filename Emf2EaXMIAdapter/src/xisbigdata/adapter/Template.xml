@@ -50,7 +50,7 @@
 				<source xmi:idref="EAID_D7152029_3BBC_4f56_9553_7D7380EBB0AF">
 					<model ea_localid="91" type="Class" name="Class1"/>
 					<role visibility="Public" targetScope="instance"/>
-					<type aggregation="none" containment="Unspecified"/>
+					<type multiplicity="1" aggregation="composite" containment="Unspecified"/>
 					<constraints/>
 					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
@@ -61,7 +61,7 @@
 				<target xmi:idref="EAID_7EB9DBA2_9FD5_478c_A347_68BA5432225B">
 					<model ea_localid="92" type="Class" name="Class2"/>
 					<role visibility="Public" targetScope="instance"/>
-					<type aggregation="none" containment="Unspecified"/>
+					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
 					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
@@ -70,7 +70,7 @@
 					<tags/>
 				</target>
 				<model ea_localid="38"/>
-				<properties ea_type="Association" stereotype="XisEntityAssociation" direction="Source -&gt; Destination"/>
+				<properties ea_type="Association" stereotype="XisEntityAssociation" direction="Destination -&gt; Source"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
 				<documentation/>
