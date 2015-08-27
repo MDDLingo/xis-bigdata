@@ -391,7 +391,8 @@ public class Emf2EaXMIAdapter {
 	
 	private static String getAttributeType(Element el) {
 		String attrType = "int";
-		String type = ((Element)el.getElementsByTagName("type").item(0)).getAttribute("xmi:idref");
+		Element typeEl = ((Element)el.getElementsByTagName("type").item(0));
+		String type = typeEl.getAttribute("href");
 		
 		if (type.contains("double")) {
 			attrType = "double";
