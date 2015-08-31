@@ -28,7 +28,7 @@ unique lazy rule Model {
 			packagedElement <- e
 		)
 	do {
-		u.applyProfile(XIS!Profile.allInstancesFrom('IN_XISMOBILE')->first());
+		u.applyProfile(XIS!Profile.allInstancesFrom('IN_XISMobile')->first());
 		thisModule.parentModel <- u;
 	}
 }
@@ -44,7 +44,7 @@ rule EClass2Class {
 			}
 		)
 	do {
-		u.applyStereotype(XIS!Stereotype.allInstancesFrom('IN_XISMOBILE')->select(s | s.name = 'XisEntity')->first());
+		u.applyStereotype(XIS!Stereotype.allInstancesFrom('IN_XISMobile')->select(s | s.name = 'XisEntity')->first());
 	}
 }
 
@@ -66,7 +66,7 @@ rule EAttribute2Property {
 			lower <- e.lowerBound
 		)
 	do {
-		u.applyStereotype(XIS!Stereotype.allInstancesFrom('IN_XISMOBILE')->select(s | s.name = 'XisEntityAttribute')->first());
+		u.applyStereotype(XIS!Stereotype.allInstancesFrom('IN_XISMobile')->select(s | s.name = 'XisEntityAttribute')->first());
 	}
 }
 
@@ -108,7 +108,7 @@ unique lazy rule Association {
 		)
 	do {
 		thisModule.parentModel.packagedElement <- thisModule.parentModel.packagedElement.append(u);
-		u.applyStereotype(XIS!Stereotype.allInstancesFrom('IN_XISMOBILE')->select(s | s.name = 'XisEntityAssociation')->first());
+		u.applyStereotype(XIS!Stereotype.allInstancesFrom('IN_XISMobile')->select(s | s.name = 'XisEntityAssociation')->first());
 	}
 }
 

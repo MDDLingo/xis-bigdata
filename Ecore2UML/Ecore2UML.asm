@@ -105,7 +105,7 @@
 		<constant value="J.+(J):J"/>
 		<constant value="Profile"/>
 		<constant value="XIS"/>
-		<constant value="IN_XISMOBILE"/>
+		<constant value="IN_XISMobile"/>
 		<constant value="J.allInstancesFrom(J):J"/>
 		<constant value="J.first():J"/>
 		<constant value="J.applyProfile(J):J"/>
