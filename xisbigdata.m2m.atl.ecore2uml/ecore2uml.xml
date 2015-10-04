@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<project name="xisbigdata.m2m.atl.ecore2uml" default="run" basedir=".">
+	<property name="atl.launcher" value="EMF-specific VM" />
+	<target name="run">
+		<atl.loadModel name="UML" metamodel="MOF" nsUri="http://www.eclipse.org/uml2/5.0.0/UML" />
+		<atl.loadModel name="Ecore" metamodel="MOF" nsUri="http://www.eclipse.org/emf/2002/Ecore" />
+		<atl.loadModel name="Library" metamodel="MOF" nsUri="http://www.eclipse.org/uml2/5.0.0/UML" />
+		<atl.loadModel name="XIS" metamodel="MOF" nsUri="http://www.eclipse.org/uml2/4.0.0/UML" />
+		<atl.loadModel metamodel="Ecore" name="ecore" path="result.ecore" />
+		<atl.loadModel metamodel="Library" name="umlTypes" path="UMLPrimitiveTypes.library.uml" />
+		<atl.loadModel metamodel="XIS" name="xis" path="XISMobile.profile.uml" />
+		<atl.launch path="src/xisbigdata/m2m/atl/ecore2uml/files/Ecore2UML.asm">
+			<inmodel name="IN" model="ecore" />
+			<inmodel name="IN_Library" model="umlTypes" />
+			<inmodel name="IN_XISMobile" model="xis" />
+			<outmodel name="OUT" model="umlout" metamodel="UML" />
+			<option name="allowInterModelReferences" value="true" />
+		</atl.launch >
+		<atl.saveModel model="umlout" path="model/out.uml" derived="true" />
+	</target>
+</project>

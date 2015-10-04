@@ -15,16 +15,18 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 import java.util.Map.Entry;
+import java.util.Properties;
 
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.core.runtime.Path;
 import org.eclipse.core.runtime.Platform;
+import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.URIConverter;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.eclipse.m2m.atl.common.ATLExecutionException;
 import org.eclipse.m2m.atl.core.ATLCoreException;
@@ -38,6 +40,13 @@ import org.eclipse.m2m.atl.core.emf.EMFInjector;
 import org.eclipse.m2m.atl.core.emf.EMFModelFactory;
 import org.eclipse.m2m.atl.core.launch.ILauncher;
 import org.eclipse.m2m.atl.engine.emfvm.launch.EMFVMLauncher;
+import org.eclipse.ocl.pivot.internal.resource.OCLASResourceFactory;
+import org.eclipse.ocl.pivot.model.OCLstdlib;
+import org.eclipse.ocl.pivot.resource.ASResource;
+import org.eclipse.ocl.pivot.utilities.OCL;
+import org.eclipse.ocl.pivot.utilities.PivotStandaloneSetup;
+import org.eclipse.ocl.xtext.completeocl.CompleteOCLStandaloneSetup;
+import org.eclipse.uml2.uml.resource.UMLResource;
 
 /**
  * Entry point of the 'Ecore2UML' transformation module.
@@ -108,24 +117,33 @@ public class Ecore2UML {
 	public Ecore2UML() throws IOException {
 		properties = new Properties();
 		properties.load(getFileURL("Ecore2UML.properties").openStream());
-		EPackage.Registry.INSTANCE.put(getMetamodelUri("XIS"), org.eclipse.uml2.uml.UMLPackage.eINSTANCE);
 		EPackage.Registry.INSTANCE.put(getMetamodelUri("UML"), org.eclipse.uml2.uml.UMLPackage.eINSTANCE);
-		EPackage.Registry.INSTANCE.put(getMetamodelUri("Library"), org.eclipse.uml2.uml.UMLPackage.eINSTANCE);
 		EPackage.Registry.INSTANCE.put(getMetamodelUri("Ecore"), org.eclipse.emf.ecore.EcorePackage.eINSTANCE);
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("ecore", new EcoreResourceFactoryImpl());
-//		EPackage.Registry.INSTANCE.put("http://www.eclipse.org/uml2/4.0.0/UML", org.eclipse.uml2.uml.UMLPackage.eINSTANCE);
-//		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(org.eclipse.uml2.uml.resource.UMLResource.FILE_EXTENSION, org.eclipse.uml2.uml.resource.UMLResource.Factory.INSTANCE);
-//		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(org.eclipse.uml2.uml.resource.UMLResource.PROFILE_FILE_EXTENSION, org.eclipse.uml2.uml.resource.UMLResource.Factory.INSTANCE);
-//		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(org.eclipse.uml2.uml.resource.UMLResource.LIBRARY_FILE_EXTENSION, org.eclipse.uml2.uml.resource.UMLResource.Factory.INSTANCE);
 		
-//		URI baseUri = 
-//		URI.createURI("jar:file:org.eclipse.uml2.uml.resources_4.0.2.v20130114-0902.jar!/");
-//		URIConverter.URI_MAP.put(URI.createURI( UMLResource.LIBRARIES_PATHMAP ), 
-//		baseUri.appendSegment( "libraries" ).appendSegment( "" ));
-//		URIConverter.URI_MAP.put(URI.createURI( UMLResource.METAMODELS_PATHMAP 
-//		), baseUri.appendSegment( "metamodels" ).appendSegment( "" ));
-//		URIConverter.URI_MAP.put(URI.createURI( UMLResource.PROFILES_PATHMAP ), 
-//		baseUri.appendSegment( "profiles" ).appendSegment( "" ));
+		EPackage.Registry.INSTANCE.put("http://www.eclipse.org/uml2/4.0.0/UML", org.eclipse.uml2.uml.UMLPackage.eINSTANCE);
+		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(org.eclipse.uml2.uml.resource.UMLResource.FILE_EXTENSION, org.eclipse.uml2.uml.resource.UMLResource.Factory.INSTANCE);
+		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(org.eclipse.uml2.uml.resource.UMLResource.METAMODEL_FILE_EXTENSION, org.eclipse.uml2.uml.resource.UMLResource.Factory.INSTANCE);
+		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(org.eclipse.uml2.uml.resource.UMLResource.PROFILE_FILE_EXTENSION, org.eclipse.uml2.uml.resource.UMLResource.Factory.INSTANCE);
+		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(org.eclipse.uml2.uml.resource.UMLResource.LIBRARY_FILE_EXTENSION, org.eclipse.uml2.uml.resource.UMLResource.Factory.INSTANCE);
+		
+		URI baseUri = 
+			URI.createURI("jar:file:/C:/Users/User/Desktop/eclipse/plugins\\org.eclipse.uml2.uml.resources_5.1.0.v20150906-1225.jar!/");
+			URIConverter.URI_MAP.put(URI.createURI( UMLResource.LIBRARIES_PATHMAP ), 
+			baseUri.appendSegment( "libraries" ).appendSegment( "" ));
+			URIConverter.URI_MAP.put(URI.createURI( UMLResource.METAMODELS_PATHMAP 
+			), baseUri.appendSegment( "metamodels" ).appendSegment( "" ));
+			URIConverter.URI_MAP.put(URI.createURI( UMLResource.PROFILES_PATHMAP ), 
+			baseUri.appendSegment( "profiles" ).appendSegment( "" ));
+		
+		// Register Pivot globally (resourceSet == null)
+		// Alternatively register it just for your resource set (see Javadoc).		
+		PivotStandaloneSetup.doSetup();
+		OCLstdlib.install();
+		OCL.newInstance(OCL.CLASS_PATH);
+		CompleteOCLStandaloneSetup.doSetup();
+		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(
+			ASResource.FILE_EXTENSION, OCLASResourceFactory.getInstance());
 	}
 	
 	/**
@@ -145,19 +163,15 @@ public class Ecore2UML {
 	public void loadModels(String inModelPath, String in_libraryModelPath, String in_xismobileModelPath) throws ATLCoreException {
 		ModelFactory factory = new EMFModelFactory();
 		IInjector injector = new EMFInjector();
-	 	IReferenceModel xisMetamodel = factory.newReferenceModel();
-		injector.inject(xisMetamodel, getMetamodelUri("XIS"));
 	 	IReferenceModel umlMetamodel = factory.newReferenceModel();
 		injector.inject(umlMetamodel, getMetamodelUri("UML"));
-	 	IReferenceModel libraryMetamodel = factory.newReferenceModel();
-		injector.inject(libraryMetamodel, getMetamodelUri("Library"));
 	 	IReferenceModel ecoreMetamodel = factory.newReferenceModel();
 		injector.inject(ecoreMetamodel, getMetamodelUri("Ecore"));
 		this.inModel = factory.newModel(ecoreMetamodel);
 		injector.inject(inModel, inModelPath);
-		this.in_libraryModel = factory.newModel(libraryMetamodel);
+		this.in_libraryModel = factory.newModel(umlMetamodel);
 		injector.inject(in_libraryModel, in_libraryModelPath);
-		this.in_xismobileModel = factory.newModel(xisMetamodel);
+		this.in_xismobileModel = factory.newModel(umlMetamodel);
 		injector.inject(in_xismobileModel, in_xismobileModelPath);
 		this.outModel = factory.newModel(umlMetamodel);
 	}
@@ -196,8 +210,8 @@ public class Ecore2UML {
 		Map<String, Object> launcherOptions = getOptions();
 		launcher.initialize(launcherOptions);
 		launcher.addInModel(inModel, "IN", "Ecore");
-		launcher.addInModel(in_libraryModel, "IN_Library", "Library");
-		launcher.addInModel(in_xismobileModel, "IN_XISMobile", "XIS");
+		launcher.addInModel(in_libraryModel, "IN_Library", "UML");
+		launcher.addInModel(in_xismobileModel, "IN_XISMobile", "UML");
 		launcher.addOutModel(outModel, "OUT", "UML");
 		return launcher.launch("run", monitor, launcherOptions, (Object[]) getModulesList());
 	}

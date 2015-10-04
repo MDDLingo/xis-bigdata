@@ -5,10 +5,12 @@ Bundle-SymbolicName: xisbigdata.m2m.atl.ecore2uml
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: xisbigdata.m2m.atl.ecore2uml.Activator
 Bundle-Vendor: Eclipse Modeling Project
-Require-Bundle: org.eclipse.core.runtime, 
+Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.uml2.uml,
  org.eclipse.emf.ecore,
- org.eclipse.m2m.atl.engine.emfvm
+ org.eclipse.m2m.atl.engine.emfvm,
+ org.eclipse.ocl.xtext.completeocl;bundle-version="1.0.0",
+ org.apache.log4j;bundle-version="1.2.15"
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Bundle-ActivationPolicy: lazy
 Eclipse-LazyStart: true
