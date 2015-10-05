@@ -14,6 +14,7 @@
 			<inmodel name="IN_Library" model="umlTypes" />
 			<inmodel name="IN_XISMobile" model="xis" />
 			<outmodel name="OUT" model="umlout" metamodel="UML" />
+			<option name="supportUML2Stereotypes" value="true" />
 			<option name="allowInterModelReferences" value="true" />
 		</atl.launch >
 		<atl.saveModel model="umlout" path="model/out.uml" derived="true" />

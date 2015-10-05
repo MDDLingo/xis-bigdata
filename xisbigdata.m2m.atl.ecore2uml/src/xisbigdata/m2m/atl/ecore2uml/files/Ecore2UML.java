@@ -15,8 +15,8 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Properties;
+import java.util.Map.Entry;
 
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.IProgressMonitor;
@@ -88,7 +88,7 @@ public class Ecore2UML {
 	 * 
 	 * @param args
 	 *            are the arguments
-	 * @generated
+	 * @generated NOT
 	 */
 	public static void main(String[] args) {
 		try {
@@ -128,7 +128,7 @@ public class Ecore2UML {
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(org.eclipse.uml2.uml.resource.UMLResource.LIBRARY_FILE_EXTENSION, org.eclipse.uml2.uml.resource.UMLResource.Factory.INSTANCE);
 		
 		URI baseUri = 
-			URI.createURI("jar:file:/C:/Users/User/Desktop/eclipse/plugins\\org.eclipse.uml2.uml.resources_5.1.0.v20150906-1225.jar!/");
+			URI.createURI("jar:file:/C:/Users/User/Desktop/eclipse/plugins/org.eclipse.uml2.uml.resources_5.1.0.v20150906-1225.jar!/");
 			URIConverter.URI_MAP.put(URI.createURI( UMLResource.LIBRARIES_PATHMAP ), 
 			baseUri.appendSegment( "libraries" ).appendSegment( "" ));
 			URIConverter.URI_MAP.put(URI.createURI( UMLResource.METAMODELS_PATHMAP 
