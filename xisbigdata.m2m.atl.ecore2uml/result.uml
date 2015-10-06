@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:XISMobile="http:///schemas/XISMobile/_eX6VYGnuEeW1vu7SxXwXTw/3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/XISMobile/_eX6VYGnuEeW1vu7SxXwXTw/3 models/xis.profile.uml#_eX68cGnuEeW1vu7SxXwXTw">
-  <uml:Model xmi:id="_M5-l8GtOEeWZKvIJZRszew" name="qweModel">
-    <packagedElement xmi:type="uml:Package" xmi:id="_M5-l8WtOEeWZKvIJZRszew" name="qwe">
-      <packagedElement xmi:type="uml:Class" xmi:id="_M5-l8mtOEeWZKvIJZRszew" name="NewEClass1"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_M5-l82tOEeWZKvIJZRszew" name="NewEClass2"/>
+  <uml:Model xmi:id="_u_XbAGwLEeWSNozee7nVKA" name="qweModel">
+    <packagedElement xmi:type="uml:Package" xmi:id="_u_XbAWwLEeWSNozee7nVKA" name="qwe">
+      <packagedElement xmi:type="uml:Class" xmi:id="_u_XbAmwLEeWSNozee7nVKA" name="NewEClass1"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_u_XbA2wLEeWSNozee7nVKA" name="NewEClass2"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_M5-l9GtOEeWZKvIJZRszew" name="neweclass2_neweclass1" memberEnd="_M5-l9WtOEeWZKvIJZRszew _M5-l-GtOEeWZKvIJZRszew">
-      <ownedEnd xmi:id="_M5-l9WtOEeWZKvIJZRszew" name="neweclass2" type="_M5-l82tOEeWZKvIJZRszew" association="_M5-l9GtOEeWZKvIJZRszew">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M5-l9mtOEeWZKvIJZRszew"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M5-l92tOEeWZKvIJZRszew" value="1"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_u_XbBGwLEeWSNozee7nVKA" name="neweclass2_neweclass1" memberEnd="_u_XbBWwLEeWSNozee7nVKA _u_XbCGwLEeWSNozee7nVKA">
+      <ownedEnd xmi:id="_u_XbBWwLEeWSNozee7nVKA" name="neweclass2" type="_u_XbA2wLEeWSNozee7nVKA" association="_u_XbBGwLEeWSNozee7nVKA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u_XbBmwLEeWSNozee7nVKA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u_XbB2wLEeWSNozee7nVKA" value="1"/>
       </ownedEnd>
-      <ownedEnd xmi:id="_M5-l-GtOEeWZKvIJZRszew" name="neweclass1" type="_M5-l8mtOEeWZKvIJZRszew" aggregation="composite" association="_M5-l9GtOEeWZKvIJZRszew">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M5-l-WtOEeWZKvIJZRszew"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_M5-l-mtOEeWZKvIJZRszew" value="1"/>
+      <ownedEnd xmi:id="_u_XbCGwLEeWSNozee7nVKA" name="neweclass1" type="_u_XbAmwLEeWSNozee7nVKA" aggregation="composite" association="_u_XbBGwLEeWSNozee7nVKA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u_XbCWwLEeWSNozee7nVKA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u_XbCmwLEeWSNozee7nVKA" value="1"/>
       </ownedEnd>
     </packagedElement>
-    <profileApplication xmi:id="_M5-l-2tOEeWZKvIJZRszew">
-      <eAnnotations xmi:id="_M5-l_GtOEeWZKvIJZRszew" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_u_XbC2wLEeWSNozee7nVKA">
+      <eAnnotations xmi:id="_u_XbDGwLEeWSNozee7nVKA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="models/xis.profile.uml#_eX68cGnuEeW1vu7SxXwXTw"/>
       </eAnnotations>
       <appliedProfile href="models/xis.profile.uml#_tS4WwGloEeWYpYVw_d_PaQ"/>
     </profileApplication>
   </uml:Model>
-  <XISMobile:XisEntity xmi:id="_M5-l_WtOEeWZKvIJZRszew" base_Class="_M5-l8mtOEeWZKvIJZRszew" name="NewEClass1"/>
-  <XISMobile:XisEntityAssociation xmi:id="_M5-l_mtOEeWZKvIJZRszew" base_Association="_M5-l9GtOEeWZKvIJZRszew" roleName="neweclass2_neweclass1"/>
-  <XISMobile:XisEntity xmi:id="_M5-l_2tOEeWZKvIJZRszew" base_Class="_M5-l82tOEeWZKvIJZRszew" name="NewEClass2"/>
+  <XISMobile:XisEntity xmi:id="_u_XbDWwLEeWSNozee7nVKA" base_Class="_u_XbAmwLEeWSNozee7nVKA" name="NewEClass1"/>
+  <XISMobile:XisEntityAssociation xmi:id="_u_XbDmwLEeWSNozee7nVKA" base_Association="_u_XbBGwLEeWSNozee7nVKA" roleName="neweclass2_neweclass1"/>
+  <XISMobile:XisEntity xmi:id="_u_XbD2wLEeWSNozee7nVKA" base_Class="_u_XbA2wLEeWSNozee7nVKA" name="NewEClass2"/>
 </xmi:XMI>

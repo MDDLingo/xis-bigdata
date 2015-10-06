@@ -12,11 +12,12 @@ package xisbigdata.m2m.atl.ecore2uml.files;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 import java.util.Map.Entry;
+import java.util.Properties;
 
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.core.runtime.IProgressMonitor;
@@ -82,19 +83,26 @@ public class Ecore2UML {
 	 * @generated
 	 */
 	protected IModel outModel;	
-		
+	
+	/**
+	 * The path of the jar containing the code.
+	 */
+	protected static String jarPath;
+	
 	/**
 	 * The main method.
 	 * 
 	 * @param args
 	 *            are the arguments
+	 * @throws URISyntaxException 
 	 * @generated NOT
 	 */
 	public static void main(String[] args) {
 		try {
-			if (args.length < 4) {
-				System.out.println("Arguments not valid : {IN_model_path, IN_Library_model_path, IN_XISMobile_model_path, OUT_model_path}.");
+			if (args.length < 5) {
+				System.out.println("Arguments not valid : {IN_model_path, IN_Library_model_path, IN_XISMobile_model_path, OUT_model_path, jarPath}.");
 			} else {
+				jarPath = args[4];
 				Ecore2UML runner = new Ecore2UML();
 				runner.loadModels(args[0], args[1], args[2]);
 				runner.doEcore2UML(new NullProgressMonitor());
@@ -127,14 +135,16 @@ public class Ecore2UML {
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(org.eclipse.uml2.uml.resource.UMLResource.PROFILE_FILE_EXTENSION, org.eclipse.uml2.uml.resource.UMLResource.Factory.INSTANCE);
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(org.eclipse.uml2.uml.resource.UMLResource.LIBRARY_FILE_EXTENSION, org.eclipse.uml2.uml.resource.UMLResource.Factory.INSTANCE);
 		
-		URI baseUri = 
-			URI.createURI("jar:file:/C:/Users/User/Desktop/eclipse/plugins/org.eclipse.uml2.uml.resources_5.1.0.v20150906-1225.jar!/");
-			URIConverter.URI_MAP.put(URI.createURI( UMLResource.LIBRARIES_PATHMAP ), 
-			baseUri.appendSegment( "libraries" ).appendSegment( "" ));
-			URIConverter.URI_MAP.put(URI.createURI( UMLResource.METAMODELS_PATHMAP 
-			), baseUri.appendSegment( "metamodels" ).appendSegment( "" ));
-			URIConverter.URI_MAP.put(URI.createURI( UMLResource.PROFILES_PATHMAP ), 
-			baseUri.appendSegment( "profiles" ).appendSegment( "" ));
+		String path = "jar:file:/" + jarPath + "/libs/org.eclipse.uml2.uml.resources_5.1.0.v20150906-1225.jar!/";
+		
+		URI baseUri = URI.createURI(path);
+//			URI.createURI("jar:file:/C:/Users/User/Desktop/eclipse/plugins/org.eclipse.uml2.uml.resources_5.1.0.v20150906-1225.jar!/");
+		URIConverter.URI_MAP.put(URI.createURI(UMLResource.LIBRARIES_PATHMAP), 
+			baseUri.appendSegment("libraries").appendSegment(""));
+		URIConverter.URI_MAP.put(URI.createURI(UMLResource.METAMODELS_PATHMAP),
+			baseUri.appendSegment("metamodels").appendSegment(""));
+		URIConverter.URI_MAP.put(URI.createURI( UMLResource.PROFILES_PATHMAP), 
+			baseUri.appendSegment("profiles").appendSegment(""));
 		
 		// Register Pivot globally (resourceSet == null)
 		// Alternatively register it just for your resource set (see Javadoc).		
