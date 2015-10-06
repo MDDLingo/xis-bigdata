@@ -108,8 +108,8 @@ public class Emf2EaXMIAdapter {
 						Element sourceRole = (Element) source.getElementsByTagName("role").item(0);
 						sourceRole.setAttribute("name", sourceName);
 						Element sourceType = (Element) source.getElementsByTagName("type").item(0);
-						String sourceLMult = ((Element)sourceOwnedEnd.getElementsByTagName("lowerValue").item(0)).getAttribute("value");
-						String sourceUMult = ((Element)sourceOwnedEnd.getElementsByTagName("upperValue").item(0)).getAttribute("value");
+						String sourceLMult = ((Element)targetOwnedEnd.getElementsByTagName("lowerValue").item(0)).getAttribute("value");
+						String sourceUMult = ((Element)targetOwnedEnd.getElementsByTagName("upperValue").item(0)).getAttribute("value");
 						sourceType.setAttribute("multiplicity", sourceLMult + ".." + sourceUMult);
 						String sourceAggregation = targetOwnedEnd.getAttribute("aggregation");
 						
@@ -127,8 +127,8 @@ public class Emf2EaXMIAdapter {
 						Element targetRole = (Element) target.getElementsByTagName("role").item(0);
 						targetRole.setAttribute("name", targetName);
 						Element targetType = (Element) target.getElementsByTagName("type").item(0);
-						String targetLMult = ((Element)targetOwnedEnd.getElementsByTagName("lowerValue").item(0)).getAttribute("value");
-						String targetUMult = ((Element)targetOwnedEnd.getElementsByTagName("upperValue").item(0)).getAttribute("value");
+						String targetLMult = ((Element)sourceOwnedEnd.getElementsByTagName("lowerValue").item(0)).getAttribute("value");
+						String targetUMult = ((Element)sourceOwnedEnd.getElementsByTagName("upperValue").item(0)).getAttribute("value");
 						targetType.setAttribute("multiplicity", targetLMult + ".." + targetUMult);
 						String targetAggregation = sourceOwnedEnd.getAttribute("aggregation");
 						
