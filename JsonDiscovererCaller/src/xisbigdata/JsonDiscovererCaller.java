@@ -1,15 +1,11 @@
 package xisbigdata;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.eclipse.emf.common.util.URI;
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.resource.Resource;
@@ -19,7 +15,6 @@ import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 
 import fr.inria.atlanmod.discoverer.JsonDiscoverer;
 import fr.inria.atlanmod.discoverer.JsonSource;
-import fr.inria.atlanmod.json.discoverer.zoo.ModelDrawer;
 
 public class JsonDiscovererCaller {
 
@@ -28,7 +23,7 @@ public class JsonDiscovererCaller {
 	
 	public static void main(String[] args) {
 		URL url = JsonDiscovererCaller.class.getResource("JsonDiscovererCaller.class");
-		String jsonText = JSON_TEST;
+		String jsonText = "";//JSON_TEST;
 		String[] cenas = { "test.json" }; 
 		args = cenas;
 		
@@ -62,7 +57,7 @@ public class JsonDiscovererCaller {
 		rset.getPackageRegistry().put(EcorePackage.eNS_URI, EcorePackage.eINSTANCE);
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("ecore", new EcoreResourceFactoryImpl());
 		
-		Resource res2 = rset.createResource(URI.createFileURI(RESULT_TEST_FILE));
+		Resource res2 = rset.createResource(URI.createFileURI("C:/Users/User/Desktop/agora.ecore"));
 		res2.getContents().add(discoveredModel);
 		
 		try {
@@ -71,15 +66,15 @@ public class JsonDiscovererCaller {
 			e.printStackTrace();
 		}
 		
-		String graphvizPath = "../graphviz-2.38/bin/dot.exe";
-		
-		if (url.toString().contains("rsrc:")) {
-			graphvizPath = "graphviz-2.38/bin/dot.exe";
-		}
-		
-		ModelDrawer drawer = new ModelDrawer(new File("./"), new File(graphvizPath));
-		List<EObject> toDraw = new ArrayList<>();
-		toDraw.add(discoveredModel);
-		drawer.draw(toDraw, new File("./result.jpg"));
+//		String graphvizPath = "../graphviz-2.38/bin/dot.exe";
+//		
+//		if (url.toString().contains("rsrc:")) {
+//			graphvizPath = "graphviz-2.38/bin/dot.exe";
+//		}
+//		
+//		ModelDrawer drawer = new ModelDrawer(new File("./"), new File(graphvizPath));
+//		List<EObject> toDraw = new ArrayList<>();
+//		toDraw.add(discoveredModel);
+//		drawer.draw(toDraw, new File("./result.jpg"));
 	}
 }
