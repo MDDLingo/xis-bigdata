@@ -96,13 +96,9 @@ rule EReferenceEOpposite2Property {
 			type <- e.eType
 		)
 	do {
-		if (e.containment and u.association.ownedEnd->size() > 0) {
-			u.association.ownedEnd.last().aggregation <- #composite;	
+		if (e.containment) {
+			u.aggregation <- #composite;
 		}
---		e.debug();
---		e.eOpposite.debug('Opposite');
---		e.eType.debug();
---		'--'.debug();
 	}
 }
 
