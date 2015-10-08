@@ -1,28 +1,110 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:XISMobile="http:///schemas/XISMobile/_eX6VYGnuEeW1vu7SxXwXTw/3" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/XISMobile/_eX6VYGnuEeW1vu7SxXwXTw/3 models/xis.profile.uml#_eX68cGnuEeW1vu7SxXwXTw">
-  <uml:Model xmi:id="_BVNH4GwiEeWlwexj8-sJsw" name="qweModel">
-    <packagedElement xmi:type="uml:Package" xmi:id="_BVNH4WwiEeWlwexj8-sJsw" name="qwe">
-      <packagedElement xmi:type="uml:Class" xmi:id="_BVNH4mwiEeWlwexj8-sJsw" name="NewEClass1"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_BVNH42wiEeWlwexj8-sJsw" name="NewEClass2"/>
+  <uml:Model xmi:id="_SVVeYG2eEeWmRvt47Zsu6Q" name="DiscoveredModel">
+    <packagedElement xmi:type="uml:Package" xmi:id="_SVVeYW2eEeWmRvt47Zsu6Q" name="Discovered">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SVVeYm2eEeWmRvt47Zsu6Q" name="Module_name">
+        <ownedAttribute xmi:id="_SVVeY22eEeWmRvt47Zsu6Q" name="EN">
+          <type xmi:type="uml:PrimitiveType" href="models/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVeZG2eEeWmRvt47Zsu6Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVeZW2eEeWmRvt47Zsu6Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SVVeZm2eEeWmRvt47Zsu6Q" name="FR">
+          <type xmi:type="uml:PrimitiveType" href="models/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVeZ22eEeWmRvt47Zsu6Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVeaG2eEeWmRvt47Zsu6Q" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SVVeaW2eEeWmRvt47Zsu6Q" name="Discovered">
+        <ownedAttribute xmi:id="_SVVeam2eEeWmRvt47Zsu6Q" name="name">
+          <type xmi:type="uml:PrimitiveType" href="models/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVea22eEeWmRvt47Zsu6Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVebG2eEeWmRvt47Zsu6Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SVVebW2eEeWmRvt47Zsu6Q" name="latitude">
+          <type xmi:type="uml:PrimitiveType" href="models/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVebm2eEeWmRvt47Zsu6Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVeb22eEeWmRvt47Zsu6Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SVVecG2eEeWmRvt47Zsu6Q" name="longitude">
+          <type xmi:type="uml:PrimitiveType" href="models/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVecW2eEeWmRvt47Zsu6Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVecm2eEeWmRvt47Zsu6Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SVVec22eEeWmRvt47Zsu6Q" name="country_code">
+          <type xmi:type="uml:PrimitiveType" href="models/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVedG2eEeWmRvt47Zsu6Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVedW2eEeWmRvt47Zsu6Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SVVedm2eEeWmRvt47Zsu6Q" name="instance_id">
+          <type xmi:type="uml:PrimitiveType" href="models/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVed22eEeWmRvt47Zsu6Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVeeG2eEeWmRvt47Zsu6Q" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SVVeeW2eEeWmRvt47Zsu6Q" name="Population">
+        <ownedAttribute xmi:id="_SVVeem2eEeWmRvt47Zsu6Q" name="module_type">
+          <type xmi:type="uml:PrimitiveType" href="models/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVee22eEeWmRvt47Zsu6Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVefG2eEeWmRvt47Zsu6Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SVVefW2eEeWmRvt47Zsu6Q" name="url">
+          <type xmi:type="uml:PrimitiveType" href="models/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVefm2eEeWmRvt47Zsu6Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVef22eEeWmRvt47Zsu6Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SVVegG2eEeWmRvt47Zsu6Q" name="value">
+          <type xmi:type="uml:PrimitiveType" href="models/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVegW2eEeWmRvt47Zsu6Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVegm2eEeWmRvt47Zsu6Q" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_SVVeg22eEeWmRvt47Zsu6Q" name="updated_at">
+          <type xmi:type="uml:PrimitiveType" href="models/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVehG2eEeWmRvt47Zsu6Q" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVehW2eEeWmRvt47Zsu6Q" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_BVNH5GwiEeWlwexj8-sJsw" name="neweclass2_neweclass1" memberEnd="_BVNH5WwiEeWlwexj8-sJsw _BVNH6GwiEeWlwexj8-sJsw">
-      <ownedEnd xmi:id="_BVNH5WwiEeWlwexj8-sJsw" name="neweclass2" type="_BVNH42wiEeWlwexj8-sJsw" association="_BVNH5GwiEeWlwexj8-sJsw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BVNH5mwiEeWlwexj8-sJsw" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BVNH52wiEeWlwexj8-sJsw" value="*"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SVVehm2eEeWmRvt47Zsu6Q" name="population_module_name" memberEnd="_SVVeh22eEeWmRvt47Zsu6Q _SVVeim2eEeWmRvt47Zsu6Q">
+      <ownedEnd xmi:id="_SVVeh22eEeWmRvt47Zsu6Q" name="population" type="_SVVeeW2eEeWmRvt47Zsu6Q" association="_SVVehm2eEeWmRvt47Zsu6Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVeiG2eEeWmRvt47Zsu6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVeiW2eEeWmRvt47Zsu6Q" value="1"/>
       </ownedEnd>
-      <ownedEnd xmi:id="_BVNH6GwiEeWlwexj8-sJsw" name="neweclass1" type="_BVNH4mwiEeWlwexj8-sJsw" aggregation="composite" association="_BVNH5GwiEeWlwexj8-sJsw">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BVNH6WwiEeWlwexj8-sJsw" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BVNH6mwiEeWlwexj8-sJsw" value="1"/>
+      <ownedEnd xmi:id="_SVVeim2eEeWmRvt47Zsu6Q" name="module_name" type="_SVVeYm2eEeWmRvt47Zsu6Q" aggregation="composite" association="_SVVehm2eEeWmRvt47Zsu6Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVei22eEeWmRvt47Zsu6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVejG2eEeWmRvt47Zsu6Q" value="*"/>
       </ownedEnd>
     </packagedElement>
-    <profileApplication xmi:id="_BVNH62wiEeWlwexj8-sJsw">
-      <eAnnotations xmi:id="_BVNH7GwiEeWlwexj8-sJsw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <packagedElement xmi:type="uml:Association" xmi:id="_SVVejW2eEeWmRvt47Zsu6Q" name="population_discovered" memberEnd="_SVVejm2eEeWmRvt47Zsu6Q _SVVekW2eEeWmRvt47Zsu6Q">
+      <ownedEnd xmi:id="_SVVejm2eEeWmRvt47Zsu6Q" name="population" type="_SVVeeW2eEeWmRvt47Zsu6Q" aggregation="composite" association="_SVVejW2eEeWmRvt47Zsu6Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVej22eEeWmRvt47Zsu6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVekG2eEeWmRvt47Zsu6Q" value="*"/>
+      </ownedEnd>
+      <ownedEnd xmi:id="_SVVekW2eEeWmRvt47Zsu6Q" name="discovered" type="_SVVeaW2eEeWmRvt47Zsu6Q" association="_SVVejW2eEeWmRvt47Zsu6Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SVVekm2eEeWmRvt47Zsu6Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SVVek22eEeWmRvt47Zsu6Q" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <profileApplication xmi:id="_SVVelG2eEeWmRvt47Zsu6Q">
+      <eAnnotations xmi:id="_SVVelW2eEeWmRvt47Zsu6Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="models/xis.profile.uml#_eX68cGnuEeW1vu7SxXwXTw"/>
       </eAnnotations>
       <appliedProfile href="models/xis.profile.uml#_tS4WwGloEeWYpYVw_d_PaQ"/>
     </profileApplication>
   </uml:Model>
-  <XISMobile:XisEntity xmi:id="_BVNH7WwiEeWlwexj8-sJsw" base_Class="_BVNH4mwiEeWlwexj8-sJsw" name="NewEClass1"/>
-  <XISMobile:XisEntityAssociation xmi:id="_BVNH7mwiEeWlwexj8-sJsw" base_Association="_BVNH5GwiEeWlwexj8-sJsw" roleName="neweclass2_neweclass1"/>
-  <XISMobile:XisEntity xmi:id="_BVNH72wiEeWlwexj8-sJsw" base_Class="_BVNH42wiEeWlwexj8-sJsw" name="NewEClass2"/>
+  <XISMobile:XisEntity xmi:id="_SVVelm2eEeWmRvt47Zsu6Q" base_Class="_SVVeYm2eEeWmRvt47Zsu6Q" name="Module_name"/>
+  <XISMobile:XisEntityAssociation xmi:id="_SVWFcG2eEeWmRvt47Zsu6Q" base_Association="_SVVejW2eEeWmRvt47Zsu6Q" roleName="population_discovered"/>
+  <XISMobile:XisEntityAssociation xmi:id="_SVWFcW2eEeWmRvt47Zsu6Q" base_Association="_SVVehm2eEeWmRvt47Zsu6Q" roleName="population_module_name"/>
+  <XISMobile:XisEntityAttribute xmi:id="_SVWFcm2eEeWmRvt47Zsu6Q" base_Property="_SVVeg22eEeWmRvt47Zsu6Q"/>
+  <XISMobile:XisEntityAttribute xmi:id="_SVWFc22eEeWmRvt47Zsu6Q" base_Property="_SVVegG2eEeWmRvt47Zsu6Q"/>
+  <XISMobile:XisEntityAttribute xmi:id="_SVWFdG2eEeWmRvt47Zsu6Q" base_Property="_SVVefW2eEeWmRvt47Zsu6Q"/>
+  <XISMobile:XisEntityAttribute xmi:id="_SVWFdW2eEeWmRvt47Zsu6Q" base_Property="_SVVeem2eEeWmRvt47Zsu6Q"/>
+  <XISMobile:XisEntityAttribute xmi:id="_SVWFdm2eEeWmRvt47Zsu6Q" base_Property="_SVVedm2eEeWmRvt47Zsu6Q"/>
+  <XISMobile:XisEntityAttribute xmi:id="_SVWFd22eEeWmRvt47Zsu6Q" base_Property="_SVVec22eEeWmRvt47Zsu6Q"/>
+  <XISMobile:XisEntityAttribute xmi:id="_SVWFeG2eEeWmRvt47Zsu6Q" base_Property="_SVVecG2eEeWmRvt47Zsu6Q"/>
+  <XISMobile:XisEntityAttribute xmi:id="_SVWFeW2eEeWmRvt47Zsu6Q" base_Property="_SVVebW2eEeWmRvt47Zsu6Q"/>
+  <XISMobile:XisEntityAttribute xmi:id="_SVWFem2eEeWmRvt47Zsu6Q" base_Property="_SVVeam2eEeWmRvt47Zsu6Q"/>
+  <XISMobile:XisEntityAttribute xmi:id="_SVWsgG2eEeWmRvt47Zsu6Q" base_Property="_SVVeZm2eEeWmRvt47Zsu6Q"/>
+  <XISMobile:XisEntityAttribute xmi:id="_SVWsgW2eEeWmRvt47Zsu6Q" base_Property="_SVVeY22eEeWmRvt47Zsu6Q"/>
+  <XISMobile:XisEntity xmi:id="_SVWsgm2eEeWmRvt47Zsu6Q" base_Class="_SVVeeW2eEeWmRvt47Zsu6Q" name="Population"/>
+  <XISMobile:XisEntity xmi:id="_SVWsg22eEeWmRvt47Zsu6Q" base_Class="_SVVeaW2eEeWmRvt47Zsu6Q" name="Discovered"/>
 </xmi:XMI>
