@@ -70,7 +70,7 @@
 					<tags/>
 				</target>
 				<model ea_localid="38"/>
-				<properties ea_type="Association" stereotype="XisEntityAssociation" direction="Destination -&gt; Source"/>
+				<properties ea_type="Association" stereotype="XisEntityAssociation" direction="Unspecified"/>
 				<modifiers isRoot="false" isLeaf="false"/>
 				<parameterSubstitutions/>
 				<documentation/>
