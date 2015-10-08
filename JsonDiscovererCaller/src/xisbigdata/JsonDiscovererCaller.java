@@ -3,7 +3,6 @@ package xisbigdata;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.net.URL;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EPackage;
@@ -18,14 +17,12 @@ import fr.inria.atlanmod.discoverer.JsonSource;
 
 public class JsonDiscovererCaller {
 
-	public static String RESULT_TEST_FILE = "./result.ecore";
 	public static String JSON_TEST = " { \"codeLieu\":\"CRQU4\", \"libelle\":\"Place du Cirque\" }";
 	
 	public static void main(String[] args) {
-		URL url = JsonDiscovererCaller.class.getResource("JsonDiscovererCaller.class");
-		String jsonText = "";//JSON_TEST;
-		String[] cenas = { "test.json" }; 
-		args = cenas;
+		String jsonText = "";
+		String[] testArgs = { "test.json" }; 
+		args = testArgs;
 		
 		if (args.length == 1) {
 			
@@ -57,7 +54,7 @@ public class JsonDiscovererCaller {
 		rset.getPackageRegistry().put(EcorePackage.eNS_URI, EcorePackage.eINSTANCE);
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("ecore", new EcoreResourceFactoryImpl());
 		
-		Resource res2 = rset.createResource(URI.createFileURI("C:/Users/User/Desktop/agora.ecore"));
+		Resource res2 = rset.createResource(URI.createFileURI("C:/Users/User/Desktop/result.ecore"));
 		res2.getContents().add(discoveredModel);
 		
 		try {
