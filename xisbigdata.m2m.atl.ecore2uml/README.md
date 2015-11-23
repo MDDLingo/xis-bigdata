@@ -12,14 +12,14 @@ To build the source code of this project the following requirements must be met:
 ## Usage
 Ecore2UML can be run in two modes: inside Eclipse or as a standalone jar.
 
-*Inside Eclipse:*
+**Inside Eclipse:**
 Run the file Ecore2UML.atl as an ATL Transformation and provide:
   1. IN_Library - The path of the UML Primitive Types model. It is the file UMLPrimitiveTypes.library.uml contained in the folder "models" of this project;
   2. IN_XISMobile - The path of the XIS-Mobile profile model. It is the file xis.profile.uml contained in the folder "models" of this project;
   3. IN - The path of the ecore model (e.g. "C:\test.ecore");
   4. OUT - The path of the generated uml file (e.g. "C:\test.uml"). This file should always have the .uml extension.
 
-*Standalone:*
+**Standalone:**
 - Export the Ecore2UML from Eclipse as a runnable jar file (right-click option "Export...");
 - Copy the folder "libs" of this project to the path of the exported jar;
 - Run the jar (use command: java -jar) and provide 5 arguments:
