@@ -28,12 +28,11 @@ import org.xml.sax.SAXException;
 public class Emf2EaXMIAdapter {
 
 	public static void main(String[] args) {
-		File f = new File("src/xisbigdata/adapter/Template.xml");
-
 		try {
 			if (args.length < 2) {
 				System.out.println("Arguments not valid : { EMF_model_path, EA_Result_model_path}.");
 			} else {
+				InputStream f = Emf2EaXMIAdapter.class.getResourceAsStream("Template.xml");
 				DocumentBuilder builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
 				Document docEA = builder.parse(f);
 				Element xmiElement = docEA.getDocumentElement();
