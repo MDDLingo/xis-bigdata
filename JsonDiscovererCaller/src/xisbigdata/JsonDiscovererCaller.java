@@ -16,13 +16,18 @@ import fr.inria.atlanmod.discoverer.JsonSource;
 
 public class JsonDiscovererCaller {
 
-	public static String JSON_TEST = " { \"codeLieu\":\"CRQU4\", \"libelle\":\"Place du Cirque\" }";
+	private static boolean IN_TEST_MODE = false;
+	private static String TEST_JSON_PATH = "C:/test.json";
+	private static String TEST_ECORE_PATH = "C:/result.ecore";
 	
 	public static void main(String[] args) {
 		try {
 			String jsonText = "";
-			String[] testArgs = { "test.json", "C:/Users/User/Desktop/result.ecore" }; 
-			args = testArgs;
+			
+			if (IN_TEST_MODE) {
+				String[] testArgs = { TEST_JSON_PATH, TEST_ECORE_PATH }; 
+				args = testArgs;
+			}
 			
 			if (args.length < 2) {
 				System.out.println("Arguments not valid : { Json_path, Result_path }");
@@ -40,32 +45,32 @@ public class JsonDiscovererCaller {
 	
 				jsonText = sb.toString();
 				br.close();
+				
+				JsonSource source = new JsonSource("Discovered");
+				source.addJsonDef(jsonText);
+				
+				JsonDiscoverer discoverer = new JsonDiscoverer();
+				EPackage discoveredModel = discoverer.discoverMetamodel(source);
+				
+				ResourceSet rset = new ResourceSetImpl();
+				rset.getPackageRegistry().put(EcorePackage.eNS_URI, EcorePackage.eINSTANCE);
+				Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("ecore", new EcoreResourceFactoryImpl());
+				
+				Resource res2 = rset.createResource(URI.createFileURI(args[1]));
+				res2.getContents().add(discoveredModel);
+				res2.save(null);
+				
+//				String graphvizPath = "../graphviz-2.38/bin/dot.exe";
+//				
+//				if (url.toString().contains("rsrc:")) {
+//					graphvizPath = "graphviz-2.38/bin/dot.exe";
+//				}
+//				
+//				ModelDrawer drawer = new ModelDrawer(new File("./"), new File(graphvizPath));
+//				List<EObject> toDraw = new ArrayList<>();
+//				toDraw.add(discoveredModel);
+//				drawer.draw(toDraw, new File("./result.jpg"));
 			}
-			
-			JsonSource source = new JsonSource("Discovered");
-			source.addJsonDef(jsonText);
-			
-			JsonDiscoverer discoverer = new JsonDiscoverer();
-			EPackage discoveredModel = discoverer.discoverMetamodel(source);
-			
-			ResourceSet rset = new ResourceSetImpl();
-			rset.getPackageRegistry().put(EcorePackage.eNS_URI, EcorePackage.eINSTANCE);
-			Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("ecore", new EcoreResourceFactoryImpl());
-			
-			Resource res2 = rset.createResource(URI.createFileURI(args[1]));
-			res2.getContents().add(discoveredModel);
-			res2.save(null);
-			
-//			String graphvizPath = "../graphviz-2.38/bin/dot.exe";
-//			
-//			if (url.toString().contains("rsrc:")) {
-//				graphvizPath = "graphviz-2.38/bin/dot.exe";
-//			}
-//			
-//			ModelDrawer drawer = new ModelDrawer(new File("./"), new File(graphvizPath));
-//			List<EObject> toDraw = new ArrayList<>();
-//			toDraw.add(discoveredModel);
-//			drawer.draw(toDraw, new File("./result.jpg"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
