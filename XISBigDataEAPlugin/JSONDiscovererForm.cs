@@ -22,6 +22,8 @@ namespace XisBigData
         private const bool GENERATE = true;
         private const string noFile = "Select a file...";
         private const string noURL = "Paste a URL...";
+        private const string noPath = "Select a folder...";
+
         private EA.Repository repository;
         private string jsonText;
 
@@ -166,10 +168,27 @@ namespace XisBigData
                 Byte[] info = new UTF8Encoding(true).GetBytes(jsonText);
                 fs.Write(info, 0, info.Length);
             }
-            backgroundWorker.ReportProgress(50, new string[] { "JSON read and saved!" });
+            backgroundWorker.ReportProgress(25, new string[] { "JSON read and saved!" });
 
+            //Domain Model Discovery
             ExecuteCommand(exePath + "\\JsonDiscovererCaller.jar\" " + fileName);
-            backgroundWorker.ReportProgress(100, new string[] { "Domain Model discovery complete!" });
+            backgroundWorker.ReportProgress(50, new string[] { "Domain Model Discovery complete!" });
+
+            //Ecore2UML Transformation
+            string ecorePath = exePath + "/result.ecore\"";
+            string primitiveTypesPath = exePath + "/UMLPrimitiveTypes.library.uml\"";
+            string xisMobilePath = exePath + "/xis.profile.uml\"";
+            string emfUmlPath = exePath + "/result.uml\"";
+
+            ExecuteCommand(exePath + "\\Ecore2Uml.jar\" " + ecorePath + " " + primitiveTypesPath + " " + xisMobilePath
+                + " " + emfUmlPath + " " + exePath + "\"");
+            backgroundWorker.ReportProgress(75, new string[] { "Model Transformation complete!" });
+
+            //EMF2EA Conversion
+            string eaUmlPath = exePath + "/result.xmi\"";
+
+            ExecuteCommand(exePath + "\\Emf2EaXMIAdapter.jar\" " + emfUmlPath + " " + eaUmlPath);
+            backgroundWorker.ReportProgress(100, new string[] { "UML Conversion complete!" });
         }
 
         private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
