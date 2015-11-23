@@ -15,7 +15,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace XISBigDataEAPlugin
+namespace XisBigData
 {
     public partial class JSONDiscovererForm : Form
     {
@@ -169,7 +169,7 @@ namespace XISBigDataEAPlugin
             backgroundWorker.ReportProgress(50, new string[] { "JSON read and saved!" });
 
             ExecuteCommand(exePath + "\\JsonDiscovererCaller.jar\" " + fileName);
-            backgroundWorker.ReportProgress(100, new string[] { "Domain Model discovery done!" });
+            backgroundWorker.ReportProgress(100, new string[] { "Domain Model discovery complete!" });
         }
 
         private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)

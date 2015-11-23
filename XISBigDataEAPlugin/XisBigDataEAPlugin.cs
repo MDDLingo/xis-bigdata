@@ -8,10 +8,10 @@ using System.Reflection;
 using System.IO;
 using System.Xml;
 
-namespace XISBigDataEAPlugin
+namespace XisBigData
 {
     [ComVisible(true)]
-    public class CodeGenerator
+    public class XisBigDataEAPlugin
     {
         // define menu constants
         private const string menuHeader = "-&XIS-BigData Plugin";
@@ -27,7 +27,7 @@ namespace XISBigDataEAPlugin
         public String EA_Connect(EA.Repository Repository)
         {
             //No special processing required.
-            return "XISBigDataEAPlugin.CodeGenerator connected";
+            return "XisBigData.XisBigDataEAPlugin connected";
         }
 
         ///
@@ -115,7 +115,7 @@ namespace XISBigDataEAPlugin
         {
             switch (ItemName)
             {
-                // user has clicked the 'Generate Code' menu option
+                // user has clicked the 'Discover' menu option
                 case menuDiscoverModel:
                     this.DiscoverModel(Repository);
                     break;

@@ -1,4 +1,4 @@
-﻿namespace XISBigDataEAPlugin
+﻿namespace XisBigData
 {
     partial class JSONDiscovererForm
     {

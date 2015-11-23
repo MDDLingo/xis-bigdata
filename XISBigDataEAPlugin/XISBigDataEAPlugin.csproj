@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeGenerator.cs" />
+    <Compile Include="XisBigDataEAPlugin.cs" />
     <Compile Include="JSONDiscovererForm.cs">
       <SubType>Form</SubType>
     </Compile>
