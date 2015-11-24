@@ -174,7 +174,7 @@ namespace XisBigData
                 Byte[] info = new UTF8Encoding(true).GetBytes(jsonText);
                 fs.Write(info, 0, info.Length);
             }
-            backgroundWorker.ReportProgress(25, new string[] { "JSON read and saved!" });
+            backgroundWorker.ReportProgress(20, new string[] { "JSON read and saved!" });
 
             //Domain Model Discovery
             string jsonPath = exePath + "/" + fileName + "\"";
@@ -182,7 +182,7 @@ namespace XisBigData
             string ecoreFullPath = exePath + "/" + ecorePath + "\"";
 
             ExecuteCommand(exePath + "/jars/JsonDiscovererCaller.jar\" " + jsonPath + " " + ecoreFullPath);
-            backgroundWorker.ReportProgress(50, new string[] { "Domain Model Discovery complete!" });
+            backgroundWorker.ReportProgress(40, new string[] { "Domain Model Discovery complete!" });
 
             //Ecore2UML Transformation
             string primitiveTypesPath = "libs/UMLPrimitiveTypes.library.uml";
@@ -191,19 +191,21 @@ namespace XisBigData
 
             ExecuteCommand(exePath + "/jars/Ecore2Uml.jar\" " + ecorePath + " " + primitiveTypesPath + " " + xisMobilePath
                 + " " + emfUmlPath + " " + exePath + "\"");
-            backgroundWorker.ReportProgress(75, new string[] { "Model Transformation complete!" });
+            backgroundWorker.ReportProgress(60, new string[] { "Model Transformation complete!" });
 
             //EMF2EA Conversion
             string eaUmlPath = tempFolder + "result.xmi";
 
             ExecuteCommand(exePath + "/jars/Emf2EaXMIAdapter.jar\" " + emfUmlPath + " " + eaUmlPath);
-            backgroundWorker.ReportProgress(100, new string[] { "UML Conversion complete!" });
+            backgroundWorker.ReportProgress(80, new string[] { "UML Conversion complete!" });
 
             //Import XMI
             string eaUmlFullPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "/" + eaUmlPath;
             EA.Project project = repository.GetProjectInterface();
             EA.Package package = (EA.Package)repository.Models.GetAt(0);
             project.ImportPackageXMI(package.PackageGUID, eaUmlFullPath, 1, 1);
+            Directory.Delete(tempFolder, true);
+            backgroundWorker.ReportProgress(100, new string[] { "Model Import complete!" });
 
             MessageBox.Show("JSON Domain Model successfully discovered!",
                 "JSON Domain Model Discovery",
