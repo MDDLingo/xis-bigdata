@@ -161,7 +161,13 @@ namespace XisBigData
         private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
         {
             string exePath = "\"" + Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string fileName = "result.json";
+            string tempFolder = "temp/";
+            string fileName = tempFolder + "result.json";
+
+            if (!Directory.Exists(tempFolder))
+            {
+                Directory.CreateDirectory(tempFolder);
+            }
 
             using (FileStream fs = File.Create(fileName))
             {
@@ -171,23 +177,26 @@ namespace XisBigData
             backgroundWorker.ReportProgress(25, new string[] { "JSON read and saved!" });
 
             //Domain Model Discovery
-            ExecuteCommand(exePath + "\\JsonDiscovererCaller.jar\" " + fileName);
+            string jsonPath = exePath + "/" + fileName + "\"";
+            string ecorePath = tempFolder + "result.ecore";
+            string ecoreFullPath = exePath + "/" + ecorePath + "\"";
+
+            ExecuteCommand(exePath + "/jars/JsonDiscovererCaller.jar\" " + jsonPath + " " + ecoreFullPath);
             backgroundWorker.ReportProgress(50, new string[] { "Domain Model Discovery complete!" });
 
             //Ecore2UML Transformation
-            string ecorePath = exePath + "/result.ecore\"";
-            string primitiveTypesPath = exePath + "/UMLPrimitiveTypes.library.uml\"";
-            string xisMobilePath = exePath + "/xis.profile.uml\"";
-            string emfUmlPath = exePath + "/result.uml\"";
+            string primitiveTypesPath = "libs/UMLPrimitiveTypes.library.uml";
+            string xisMobilePath = "libs/xis.profile.uml";
+            string emfUmlPath = tempFolder + "result.uml";
 
-            ExecuteCommand(exePath + "\\Ecore2Uml.jar\" " + ecorePath + " " + primitiveTypesPath + " " + xisMobilePath
+            ExecuteCommand(exePath + "/jars/Ecore2Uml.jar\" " + ecorePath + " " + primitiveTypesPath + " " + xisMobilePath
                 + " " + emfUmlPath + " " + exePath + "\"");
             backgroundWorker.ReportProgress(75, new string[] { "Model Transformation complete!" });
 
             //EMF2EA Conversion
-            string eaUmlPath = exePath + "/result.xmi\"";
+            string eaUmlPath = tempFolder + "result.xmi";
 
-            ExecuteCommand(exePath + "\\Emf2EaXMIAdapter.jar\" " + emfUmlPath + " " + eaUmlPath);
+            ExecuteCommand(exePath + "/jars/Emf2EaXMIAdapter.jar\" " + emfUmlPath + " " + eaUmlPath);
             backgroundWorker.ReportProgress(100, new string[] { "UML Conversion complete!" });
         }
 
