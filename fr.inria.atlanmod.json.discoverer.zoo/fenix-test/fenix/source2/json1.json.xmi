@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="ASCII"?>
+<discos:scheduleOfCourse xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:discos="http://fr.inria.atlanmod/discovered/scheduleOfCourse">
+  <lessonPeriods start="2013-09-16 00:00:00" end="2013-12-21 23:59:59"/>
+  <courseLoads type="PROBLEMS" totalQuantity="21" unitQuantity="1"/>
+  <courseLoads type="TEORICA" totalQuantity="28" unitQuantity="2"/>
+  <shifts name="Ges5PB07">
+    <occupation current="50" max="50"/>
+    <types>PROBLEMS</types>
+    <lessons start="2013-12-17 17:00:00" end="2013-12-17 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-10 17:00:00" end="2013-12-10 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-03 17:00:00" end="2013-12-03 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-26 17:00:00" end="2013-11-26 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-19 17:00:00" end="2013-11-19 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-12 17:00:00" end="2013-11-12 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-05 17:00:00" end="2013-11-05 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-29 17:00:00" end="2013-10-29 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-22 17:00:00" end="2013-10-22 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-15 17:00:00" end="2013-10-15 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-08 17:00:00" end="2013-10-08 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-01 17:00:00" end="2013-10-01 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-24 17:00:00" end="2013-09-24 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-17 17:00:00" end="2013-09-17 18:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <rooms type="ROOM" id="2448131362317" name="C9" description="C9">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="80" exam="40"/>
+    </rooms>
+  </shifts>
+  <shifts name="Ges5PB08">
+    <occupation current="51" max="51"/>
+    <types>PROBLEMS</types>
+    <lessons start="2013-12-18 17:30:00" end="2013-12-18 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-11 17:30:00" end="2013-12-11 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-04 17:30:00" end="2013-12-04 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-27 17:30:00" end="2013-11-27 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-20 17:30:00" end="2013-11-20 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-13 17:30:00" end="2013-11-13 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-06 17:30:00" end="2013-11-06 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-30 17:30:00" end="2013-10-30 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-23 17:30:00" end="2013-10-23 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-16 17:30:00" end="2013-10-16 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-09 17:30:00" end="2013-10-09 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-02 17:30:00" end="2013-10-02 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-25 17:30:00" end="2013-09-25 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-18 17:30:00" end="2013-09-18 19:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <rooms type="ROOM" id="2448131363674" name="F4" description="F4">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="66" exam="33"/>
+    </rooms>
+  </shifts>
+  <shifts name="Ges5PB05">
+    <occupation current="50" max="50"/>
+    <types>PROBLEMS</types>
+    <lessons start="2013-12-16 16:30:00" end="2013-12-16 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-09 16:30:00" end="2013-12-09 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-02 16:30:00" end="2013-12-02 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-25 16:30:00" end="2013-11-25 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-18 16:30:00" end="2013-11-18 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-11 16:30:00" end="2013-11-11 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-04 16:30:00" end="2013-11-04 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-28 16:30:00" end="2013-10-28 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-21 16:30:00" end="2013-10-21 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-14 16:30:00" end="2013-10-14 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-07 16:30:00" end="2013-10-07 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-30 16:30:00" end="2013-09-30 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-23 16:30:00" end="2013-09-23 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-16 16:30:00" end="2013-09-16 18:00:00">
+      <room type="ROOM" id="2448131363674" name="F4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <rooms type="ROOM" id="2448131363674" name="F4" description="F4">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="66" exam="33"/>
+    </rooms>
+  </shifts>
+  <shifts name="Ges5PB04">
+    <occupation current="42" max="45"/>
+    <types>PROBLEMS</types>
+    <lessons start="2013-12-16 14:00:00" end="2013-12-16 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-09 14:00:00" end="2013-12-09 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-02 14:00:00" end="2013-12-02 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-25 14:00:00" end="2013-11-25 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-18 14:00:00" end="2013-11-18 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-11 14:00:00" end="2013-11-11 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-04 14:00:00" end="2013-11-04 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-28 14:00:00" end="2013-10-28 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-21 14:00:00" end="2013-10-21 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-14 14:00:00" end="2013-10-14 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-07 14:00:00" end="2013-10-07 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-30 14:00:00" end="2013-09-30 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-23 14:00:00" end="2013-09-23 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-16 14:00:00" end="2013-09-16 15:30:00">
+      <room type="ROOM" id="2448131361685" name="V1.32">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <rooms type="ROOM" id="2448131361685" name="V1.32" description="V1.32">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="60" exam="30"/>
+    </rooms>
+  </shifts>
+  <shifts name="Ges5PB06">
+    <occupation current="50" max="50"/>
+    <types>PROBLEMS</types>
+    <lessons start="2013-12-17 17:00:00" end="2013-12-17 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-10 17:00:00" end="2013-12-10 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-03 17:00:00" end="2013-12-03 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-26 17:00:00" end="2013-11-26 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-19 17:00:00" end="2013-11-19 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-12 17:00:00" end="2013-11-12 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-05 17:00:00" end="2013-11-05 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-29 17:00:00" end="2013-10-29 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-22 17:00:00" end="2013-10-22 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-15 17:00:00" end="2013-10-15 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-08 17:00:00" end="2013-10-08 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-01 17:00:00" end="2013-10-01 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-24 17:00:00" end="2013-09-24 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-17 17:00:00" end="2013-09-17 18:30:00">
+      <room type="ROOM" id="2448131363664" name="F2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <rooms type="ROOM" id="2448131363664" name="F2" description="F2">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="66" exam="33"/>
+    </rooms>
+  </shifts>
+  <shifts name="Ges5T01">
+    <occupation current="120" max="120"/>
+    <types>TEORICA</types>
+    <lessons start="2013-09-18 13:30:00" end="2013-09-18 14:30:00">
+      <room type="ROOM" id="2448131362317" name="C9">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-25 13:30:00" end="2013-09-25 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-02 13:30:00" end="2013-10-02 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-09 13:30:00" end="2013-10-09 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-16 13:30:00" end="2013-10-16 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-23 13:30:00" end="2013-10-23 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-30 13:30:00" end="2013-10-30 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-06 13:30:00" end="2013-11-06 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-13 13:30:00" end="2013-11-13 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-20 13:30:00" end="2013-11-20 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-27 13:30:00" end="2013-11-27 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-04 13:30:00" end="2013-12-04 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-11 13:30:00" end="2013-12-11 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-18 13:30:00" end="2013-12-18 14:30:00">
+      <room type="ROOM" id="2448131362493" name="GA4">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-16 15:30:00" end="2013-09-16 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-23 15:30:00" end="2013-09-23 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-30 15:30:00" end="2013-09-30 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-07 15:30:00" end="2013-10-07 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-14 15:30:00" end="2013-10-14 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-21 15:30:00" end="2013-10-21 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-28 15:30:00" end="2013-10-28 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-04 15:30:00" end="2013-11-04 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-11 15:30:00" end="2013-11-11 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-18 15:30:00" end="2013-11-18 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-25 15:30:00" end="2013-11-25 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-02 15:30:00" end="2013-12-02 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-09 15:30:00" end="2013-12-09 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-16 15:30:00" end="2013-12-16 16:30:00">
+      <room type="ROOM" id="2448131363437" name="PA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <rooms type="ROOM" id="2448131363437" name="PA1" description="PA1">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="138" exam="45"/>
+    </rooms>
+    <rooms type="ROOM" id="2448131362493" name="GA4" description="GA4">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="140" exam="35"/>
+    </rooms>
+    <rooms type="ROOM" id="2448131362317" name="C9" description="C9">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="80" exam="40"/>
+    </rooms>
+  </shifts>
+  <shifts name="Ges5T02">
+    <occupation current="79" max="95"/>
+    <types>TEORICA</types>
+    <lessons start="2013-12-18 17:30:00" end="2013-12-18 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-11 17:30:00" end="2013-12-11 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-04 17:30:00" end="2013-12-04 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-27 17:30:00" end="2013-11-27 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-20 17:30:00" end="2013-11-20 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-13 17:30:00" end="2013-11-13 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-06 17:30:00" end="2013-11-06 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-30 17:30:00" end="2013-10-30 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-23 17:30:00" end="2013-10-23 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-16 17:30:00" end="2013-10-16 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-09 17:30:00" end="2013-10-09 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-02 17:30:00" end="2013-10-02 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-25 17:30:00" end="2013-09-25 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-18 17:30:00" end="2013-09-18 18:30:00">
+      <room type="ROOM" id="2448131362614" name="QA02.2">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-17 11:30:00" end="2013-12-17 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-10 11:30:00" end="2013-12-10 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-03 11:30:00" end="2013-12-03 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-26 11:30:00" end="2013-11-26 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-19 11:30:00" end="2013-11-19 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-12 11:30:00" end="2013-11-12 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-05 11:30:00" end="2013-11-05 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-29 11:30:00" end="2013-10-29 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-22 11:30:00" end="2013-10-22 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-15 11:30:00" end="2013-10-15 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-08 11:30:00" end="2013-10-08 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-01 11:30:00" end="2013-10-01 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-24 11:30:00" end="2013-09-24 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-17 11:30:00" end="2013-09-17 12:30:00">
+      <room type="ROOM" id="2448131362971" name="EA1">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <rooms type="ROOM" id="2448131362614" name="QA02.2" description="QA02.2">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="130" exam="25"/>
+    </rooms>
+    <rooms type="ROOM" id="2448131362971" name="EA1" description="EA1">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="109" exam="32"/>
+    </rooms>
+  </shifts>
+  <shifts name="Ges5T03">
+    <occupation current="46" max="90"/>
+    <types>TEORICA</types>
+    <lessons start="2013-12-18 13:30:00" end="2013-12-18 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-11 13:30:00" end="2013-12-11 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-04 13:30:00" end="2013-12-04 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-27 13:30:00" end="2013-11-27 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-20 13:30:00" end="2013-11-20 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-13 13:30:00" end="2013-11-13 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-06 13:30:00" end="2013-11-06 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-30 13:30:00" end="2013-10-30 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-23 13:30:00" end="2013-10-23 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-16 13:30:00" end="2013-10-16 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-09 13:30:00" end="2013-10-09 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-02 13:30:00" end="2013-10-02 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-25 13:30:00" end="2013-09-25 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-18 13:30:00" end="2013-09-18 14:30:00">
+      <room type="ROOM" id="2448131361607" name="VA5">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-20 13:30:00" end="2013-12-20 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-13 13:30:00" end="2013-12-13 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-12-06 13:30:00" end="2013-12-06 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-29 13:30:00" end="2013-11-29 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-22 13:30:00" end="2013-11-22 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-15 13:30:00" end="2013-11-15 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-08 13:30:00" end="2013-11-08 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-11-01 13:30:00" end="2013-11-01 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-25 13:30:00" end="2013-10-25 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-18 13:30:00" end="2013-10-18 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-11 13:30:00" end="2013-10-11 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-10-04 13:30:00" end="2013-10-04 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-27 13:30:00" end="2013-09-27 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <lessons start="2013-09-20 13:30:00" end="2013-09-20 14:30:00">
+      <room type="ROOM" id="2448131363642" name="FA3">
+        <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      </room>
+    </lessons>
+    <rooms type="ROOM" id="2448131363642" name="FA3" description="FA3">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="94" exam="24"/>
+    </rooms>
+    <rooms type="ROOM" id="2448131361607" name="VA5" description="VA5">
+      <topLevelSpace type="CAMPUS" id="2448131360897" name="Alameda"/>
+      <capacity normal="90" exam="25"/>
+    </rooms>
+  </shifts>
+</discos:scheduleOfCourse>

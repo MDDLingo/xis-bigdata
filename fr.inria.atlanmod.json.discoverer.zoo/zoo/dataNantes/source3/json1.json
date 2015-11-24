@@ -1,0 +1,164 @@
+{
+    "opendata": {
+        "request": "http://data.nantes.fr/api/getInfoTraficTANTempsReel/1.0/39W9VSNCSASEOGV/?output=json",
+        "answer": {
+            "status": {
+                "attributes": {
+                    "code": "0",
+                    "message": "OK"
+                }
+            },
+            "data": {
+                "ROOT": {
+                    "LISTE_INFOTRAFICS": {
+                        "INFOTRAFIC": [
+                            {
+                                "CODE": "1205",
+                                "LANGUE": "0",
+                                "INTITULE": "Travaux rue Basse Chênaie à Nantes",
+                                "RESUME": "En raison de travaux rue Basse Chênaie à Nantes, l'itinéraire de la ligne 12 est modifié, dans les 2 sens, entre les arrêts Vison et Vieux Doulon, à partir du lundi 4 mars 2013.",
+                                "TEXTE_VOCAL": "Ligne dévié dans les 2 Sensse , Entre les arai vizon et vieu doulon . Juska fin novembre 2013",
+                                "DATE_DEBUT": "04/03/2013",
+                                "DATE_FIN": "30/11/2013",
+                                "HEURE_DEBUT": "05:15",
+                                "HEURE_FIN": "18:30",
+                                "PERTURBATION_TERMINEE": "0",
+                                "TRONCONS": "[12/1/DRID1/COLI3];[12/2/COLI1/DRID2]"
+                            },
+                            {
+                                "CODE": "1928",
+                                "LANGUE": "0",
+                                "INTITULE": "Travaux allée Bourgonnière à St Herblain",
+                                "RESUME": "En raison de travaux allée de la Bourgonnière à Saint Herblain, l'itinéraire de la ligne 81 est modifié, dans les 2 sens, entre les arrêts Gare Indre et Zimmer, du 26 août à la fin de l'année 2013.",
+                                "TEXTE_VOCAL": "Ligne dévié entre les arai gare dindre et zimaire . Dans les 2 sense . Juska la fin de lané 2013",
+                                "DATE_DEBUT": "26/08/2013",
+                                "DATE_FIN": "31/12/2013",
+                                "HEURE_DEBUT": "05:30",
+                                "HEURE_FIN": "18:30",
+                                "PERTURBATION_TERMINEE": "0",
+                                "TRONCONS": "[81/1/SPHI1/BGNN1];[81/2/BGNN2/SPHI2]"
+                            },
+                            {
+                                "CODE": "1963",
+                                "LANGUE": "0",
+                                "INTITULE": "Travaux rue de la basse Chênaie à Nantes",
+                                "RESUME": "Prolongation des travaux jusqu'au 6 décembre 2013\n \nEn raison de travaux rue de la basse Chênaie à Nantes, les itinéraires des renforts scolaires de la ligne C7 sont modifiés, dans les 2 sens, entre les arrêts Basse Chênaie et Colinière du lundi 4 mars au jeudi 31 octobre 2013.",
+                                "TEXTE_VOCAL": "ligne dévié entre basse chainai et coliniaire, dans lé 2 senss. jusko 6 décenbre 2013",
+                                "DATE_DEBUT": "04/03/2013",
+                                "DATE_FIN": "06/12/2013",
+                                "HEURE_DEBUT": "10:30",
+                                "HEURE_FIN": "18:00",
+                                "PERTURBATION_TERMINEE": "0",
+                                "TRONCONS": "[C7/1/-/-];[C7/2/-/-]"
+                            },
+                            {
+                                "CODE": "1987",
+                                "LANGUE": "0",
+                                "INTITULE": "Travaux rue de Bretagne à Sautron",
+                                "RESUME": "En raison de travaux rue de Bretagne à Sautron, l'itinéraire de la ligne 90 est modifié, uniquement en direction de Orvault Morlière, entre les arrêts Sautron et Place Centrale, du lundi 16 septembre au vendredi 31 janvier 2014.",
+                                "TEXTE_VOCAL": "Ligne dévié entre les arrai sautron et place central . Unikemen ver orvo morliaire . Jusko 31 janvier 2014",
+                                "DATE_DEBUT": "16/09/2013",
+                                "DATE_FIN": "31/01/2014",
+                                "HEURE_DEBUT": "11:15",
+                                "HEURE_FIN": "18:30",
+                                "PERTURBATION_TERMINEE": "0",
+                                "TRONCONS": "[90/2/LBAU2/LBAU2]"
+                            },
+                            {
+                                "CODE": "2061",
+                                "LANGUE": "0",
+                                "INTITULE": "Travaux route des Mares à Bouaye",
+                                "RESUME": "En raison de travaux route des Mares à Bouaye, l'itinéraire de la lignes 68 est modifié, dans les 2 sens, entre les arrêts Jacques Demy et Le Tour, du 10 octobre 2013 au 17 janvier 2014.",
+                                "TEXTE_VOCAL": "Ligne dévié dans les 2 sense . Entre les arai le tour  et  jak  demmi . Jusko 17 janvier 2014",
+                                "DATE_DEBUT": "10/10/2013",
+                                "DATE_FIN": "17/01/2014",
+                                "HEURE_DEBUT": "05:30",
+                                "HEURE_FIN": "18:00",
+                                "PERTURBATION_TERMINEE": "0",
+                                "TRONCONS": "[68/1/JCDM1/LTOU1];[68/2/LTOU2/JCDM2]"
+                            },
+                            {
+                                "CODE": "2145",
+                                "LANGUE": "0",
+                                "INTITULE": "Travaux rue Marie Curie à St Sébastien",
+                                "RESUME": "En raison de travaux rue Marie Curie à St Sébastien, l'itinéraire de la ligne 27 est modifié, uniquement en direction de la Herdrie, entre les arrêts Gripots et Gare Vertou Nord, du samedi 26 Octobre 2013 au lundi 17 Mars 2014.",
+                                "TEXTE_VOCAL": "Ligne dévié unikemen vers la erdri . Entre les arai gripo et gare vertou nor . Jusko 17 marsse 2014",
+                                "DATE_DEBUT": "25/10/2013",
+                                "DATE_FIN": "17/03/2014",
+                                "HEURE_DEBUT": "15:30",
+                                "HEURE_FIN": "18:00",
+                                "PERTURBATION_TERMINEE": "0",
+                                "TRONCONS": "[27/1/CURI1/LFLE3]"
+                            },
+                            {
+                                "CODE": "2163",
+                                "LANGUE": "0",
+                                "INTITULE": "Modification de l'implantation arrêt Mitrie",
+                                "RESUME": "A compter du 31 octobre 2013, les arrêts Mitrie changent d'implantation définitivement.",
+                                "TEXTE_VOCAL": "modification définitive de limplantacion de larrai mitri",
+                                "DATE_DEBUT": "31/10/2013",
+                                "DATE_FIN": "",
+                                "HEURE_DEBUT": "05:30",
+                                "HEURE_FIN": "",
+                                "PERTURBATION_TERMINEE": "0",
+                                "TRONCONS": "[11/1/MITR1/MITR1];[12/2/MITR1/MITR1];[70/1/MITR3/MITR3];[70/2/MITR4/MITR4]"
+                            },
+                            {
+                                "CODE": "2167",
+                                "LANGUE": "0",
+                                "INTITULE": "Travaux rue de Bel Air à Carquefou",
+                                "RESUME": "Travaux prolongés jusqu'au vendredi 29 novembre 2013.\n \nEn raison de travaux rue de Bel Air à Carquefou, l'itinéraire de la ligne 85 est modifié uniquement en direction de Bois St Lys, entre les arrets Parc et Marché Commun, du mercredi 6 au vendredi 22 novembre 2013.\n \n794/13",
+                                "TEXTE_VOCAL": "ligne dévié entre les arai park et marché komun , unikemen ver boi sain lisse, du 5 o 29 novembre 2013",
+                                "DATE_DEBUT": "06/11/2013",
+                                "DATE_FIN": "29/11/2013",
+                                "HEURE_DEBUT": "07:00",
+                                "HEURE_FIN": "18:30",
+                                "PERTURBATION_TERMINEE": "0",
+                                "TRONCONS": "[85/1/PACQ1/MCCO1]"
+                            },
+                            {
+                                "CODE": "2237",
+                                "LANGUE": "0",
+                                "INTITULE": "Mise en service arrêt Mangin à Nantes",
+                                "RESUME": "A compter du mercredi 20 novembre 2013, l'arrêt Mangin en direction de Hôtel de Région situé bd Victor Hugo (ex arrêt de la ligne 42 vers Vertou) est mis en exploitation sur la ligne 26.",
+                                "TEXTE_VOCAL": "arrai mangin vair hotel de région mis en exploitation a partir du 20 novembre 2013",
+                                "DATE_DEBUT": "20/11/2013",
+                                "DATE_FIN": "",
+                                "HEURE_DEBUT": "",
+                                "HEURE_FIN": "",
+                                "PERTURBATION_TERMINEE": "0",
+                                "TRONCONS": "[26/2/-/-]"
+                            },
+                            {
+                                "CODE": "2243",
+                                "LANGUE": "0",
+                                "INTITULE": "Travaux rue de la Chesnaie à Rezé",
+                                "RESUME": "En raison de travaux de voirie rue de la Chesnaie à Rezé, l'itinéraire de la ligne 98 est modifié dans les deux sens entre les arrets Jaguère et Mélies, du 25 novembre au 6 décembre 2013.",
+                                "TEXTE_VOCAL": "Ligne dévié entre moulin a huile et méliès , Dans les deux sense . Jusko 6 décembre 2013",
+                                "DATE_DEBUT": "25/11/2013",
+                                "DATE_FIN": "06/12/2013",
+                                "HEURE_DEBUT": "05:30",
+                                "HEURE_FIN": "19:00",
+                                "PERTURBATION_TERMINEE": "0",
+                                "TRONCONS": "[98/1/XREZ2/MHUI3];[98/2/MHUI2/XREZ1]"
+                            },
+                            {
+                                "CODE": "2261",
+                                "LANGUE": "0",
+                                "INTITULE": "Travaux rue Maurice Daniel à St Sébastien",
+                                "RESUME": "En raison de travaux rue Maurice Daniel à Saint-Sébastien Sur Loire, les itinéraires des lignes 29 et 39 sont modifiés, dans les 2 sens, entre les arrêts Métairie et St-Sébastien, le mercredi 27 novembre 2013 de 8h à 12h.",
+                                "TEXTE_VOCAL": "travaux rue maurice daniel a sain sebastien ligne dévié entre les arrai maitéri et sain sébastien. le 27 novembre de 8h a 12h",
+                                "DATE_DEBUT": "27/11/2013",
+                                "DATE_FIN": "27/11/2013",
+                                "HEURE_DEBUT": "08:00",
+                                "HEURE_FIN": "12:00",
+                                "PERTURBATION_TERMINEE": "0",
+                                "TRONCONS": "[29/1/CBSS1/CBSS1];[29/2/CBSS2/CBSS2];[39/1/CBSS1/CBSS1];[39/2/CBSS2/CBSS2]"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
