@@ -206,7 +206,7 @@ namespace XisBigData
             project.ImportPackageXMI(package.PackageGUID, eaUmlFullPath, 1, 1);
 
             MessageBox.Show("JSON Domain Model successfully discovered!",
-                "",
+                "JSON Domain Model Discovery",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information,
                 MessageBoxDefaultButton.Button1);

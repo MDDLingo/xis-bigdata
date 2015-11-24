@@ -1,6 +1,6 @@
 # JsonDiscovererCaller
 JsonDiscovererCaller is a helper project that calls the [JsonDiscoverer tool](http://som-research.uoc.edu/tools/jsonDiscoverer/) in the "Simple Discovery" mode.
-It will discover the implicit schema of a single json document and represent that schema in an Ecore model.
+It will discover the implicit schema of a single JSON document and represent that schema in an Ecore model.
 
 ## Software Dependencies
 To build the source code of this project the following requirements must be met:
