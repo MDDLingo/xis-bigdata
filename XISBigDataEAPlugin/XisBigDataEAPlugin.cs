@@ -126,8 +126,6 @@ namespace XisBigData
 
         private void DiscoverModel(EA.Repository Repository)
         {
-            EA.Package package = Repository.Models.GetAt(0);
-            EA.Package rootPackage = Repository.Models.GetAt(0).Packages.GetAt(0);
             new JSONDiscovererForm(Repository).Show();
         }
 

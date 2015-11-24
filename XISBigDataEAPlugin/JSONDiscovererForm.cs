@@ -198,6 +198,18 @@ namespace XisBigData
 
             ExecuteCommand(exePath + "/jars/Emf2EaXMIAdapter.jar\" " + emfUmlPath + " " + eaUmlPath);
             backgroundWorker.ReportProgress(100, new string[] { "UML Conversion complete!" });
+
+            //Import XMI
+            string eaUmlFullPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "/" + eaUmlPath;
+            EA.Project project = repository.GetProjectInterface();
+            EA.Package package = (EA.Package)repository.Models.GetAt(0);
+            project.ImportPackageXMI(package.PackageGUID, eaUmlFullPath, 1, 1);
+
+            MessageBox.Show("JSON Domain Model successfully discovered!",
+                "",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information,
+                MessageBoxDefaultButton.Button1);
         }
 
         private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
