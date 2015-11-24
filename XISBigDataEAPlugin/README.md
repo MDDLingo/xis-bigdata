@@ -6,7 +6,7 @@ To run this project from the source code the following requirements must be met:
 
   - [Visual Studio](https://www.visualstudio.com/) (2012 or above) installed; 
   - [Sparx Systems Enterprise Architect (EA)](http://www.sparxsystems.com.au/products/ea) (version 10.0.1005 or above) installed;
-  - Java in the PATH system variable (see [here] how to set it)(https://www.java.com/en/download/help/path.xml).
+  - Java in the PATH system variable (see [here](https://www.java.com/en/download/help/path.xml) how to set it).
  
 ## Usage
 To test XISBigDataEAPlugin you need to:
