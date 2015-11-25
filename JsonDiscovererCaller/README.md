@@ -6,7 +6,7 @@ It will discover the implicit schema of a single JSON document and represent tha
 To build the source code of this project the following requirements must be met:
 
   - Import the referenced projects "com.google.gson", "fr.inria.atlanmod.json.discoverer", "fr.inria.atlanmod.json.discoverer.coverage" and " fr.inria.atlanmod.json.discoverer.zoo" to your Eclipse's workspace;
-  - Assure you have the Ecore plugin in your Eclipse version (specifically assure you have the "org.eclipse.emf.ecore" and "org.eclipse.emf.ecore.xmi" jars in Eclipse's plugins folder);
+  - Assure you have the Ecore plugin in your Eclipse version (specifically assure you have the jars "org.eclipse.emf.ecore" and "org.eclipse.emf.ecore.xmi" in Eclipse's plugins folder);
   - We reccomend the usage of the [Eclipse Modeling Tools](http://www.eclipse.org/downloads/packages/eclipse-modeling-tools/mars1]) version of Eclipse, which has by default the Ecore plugin mentioned before.
   
 ## Usage
