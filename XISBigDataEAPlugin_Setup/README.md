@@ -11,4 +11,6 @@ To run this project from the source code the following requirements must be met:
 To test XISBigDataEAPlugin_Setup you need to:
   1. Open the file "XISBigDataEAPlugin_Setup.sln" in SharpDevelop;
   2. Build the solution (press F8);
-  3. Check the content of the projects "bin" folder and execute the generated file "XISBigDataEAPlugin_Setup.msi".
+  3. Check the content of the project's "bin" folder and execute the generated file "XISBigDataEAPlugin_Setup.msi".
+  
+More information about this in this [tutorial](http://bellekens.com/2011/02/23/tutorial-deploy-your-enterprise-architect-csharp-add-in-with-an-msi-package/).
