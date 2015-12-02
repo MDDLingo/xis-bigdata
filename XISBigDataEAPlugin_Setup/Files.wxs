@@ -28,16 +28,16 @@
 					</Component>
 					<Directory Id="jars" Name="jars">
 						<Component Id="XISBigDataJarsFiles" Guid="7902D75B-2EFF-4DD8-9E87-F629C85BF01A" DiskId="1">
-							<File Id="Ecore2Uml.jar" Name="Ecore2Uml.jar" Source="jars\Ecore2Uml.jar" />
-							<File Id="Emf2EaXMIAdapter.jar" Name="Emf2EaXMIAdapter.jar" Source="jars\Emf2EaXMIAdapter.jar" />
-							<File Id="JsonDiscovererCaller.jar" Name="JsonDiscovererCaller.jar" Source="jars\JsonDiscovererCaller.jar" />
+							<File Id="Ecore2Uml.jar" Name="Ecore2Uml.jar" Source="..\XISBigDataEAPlugin\jars\Ecore2Uml.jar" />
+							<File Id="Emf2EaXMIAdapter.jar" Name="Emf2EaXMIAdapter.jar" Source="..\XISBigDataEAPlugin\jars\Emf2EaXMIAdapter.jar" />
+							<File Id="JsonDiscovererCaller.jar" Name="JsonDiscovererCaller.jar" Source="..\XISBigDataEAPlugin\jars\JsonDiscovererCaller.jar" />
 						</Component>
 					</Directory>
 					<Directory Id="libs" Name="libs">
 						<Component Id="XISBigDataLibsFiles" Guid="0B716B2D-D087-4F14-821A-4346C588F2EE" DiskId="1">
-							<File Id="org.eclipse.uml2.uml.resources_5.1.0.v20150906_1225.jar" Name="org.eclipse.uml2.uml.resources_5.1.0.v20150906-1225.jar" Source="libs\org.eclipse.uml2.uml.resources_5.1.0.v20150906-1225.jar" />
-							<File Id="UMLPrimitiveTypes.library.uml" Name="UMLPrimitiveTypes.library.uml" Source="libs\UMLPrimitiveTypes.library.uml" />
-							<File Id="xis.profile.uml" Name="xis.profile.uml" Source="libs\xis.profile.uml" />
+							<File Id="org.eclipse.uml2.uml.resources_5.1.0.v20150906_1225.jar" Name="org.eclipse.uml2.uml.resources_5.1.0.v20150906-1225.jar" Source="..\XISBigDataEAPlugin\libs\org.eclipse.uml2.uml.resources_5.1.0.v20150906-1225.jar" />
+							<File Id="UMLPrimitiveTypes.library.uml" Name="UMLPrimitiveTypes.library.uml" Source="..\XISBigDataEAPlugin\libs\UMLPrimitiveTypes.library.uml" />
+							<File Id="xis.profile.uml" Name="xis.profile.uml" Source="..\XISBigDataEAPlugin\libs\xis.profile.uml" />
 						</Component>
 					</Directory>
 				</Directory>
