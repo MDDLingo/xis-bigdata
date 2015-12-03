@@ -55,11 +55,13 @@ namespace XisBigData
             }
             else if (textBoxURL.Text != noURL)
             {
+                errorProvider.SetError(textBoxURL, string.Empty);
                 ObtainJson();
             }
             else
             {
                 errorProvider.SetError(textBoxFile, "A Destination folder must be specified!");
+                errorProvider.SetError(textBoxURL, "A URL must be specified!");
                 valid = false;
             }
 
